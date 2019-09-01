@@ -1,0 +1,7 @@
+
+
+link: http://kitsware.com/projects/iotweather
+
+access:
+  user: test01
+  pass: 1234

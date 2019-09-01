@@ -1,0 +1,532 @@
+0x0131-0x0134  = 0.83
+----0x3A-----
+0x00F7-0x00F9  = 0.67
+----0x0C-----
+0x00EB-0x00ED  = 0.64
+----0x2D-----
+0x00BE-0x00C0  = 0.51
+
+
+0X01DA-0X01DE  = 300V  = 1.14
+0X016B-0X016C  = 0.84
+----64--------
+0X012A-0X012C  = 0.67
+----17--------
+0X0119-0X011A  = 0.64
+----51--------
+0X00E6-0X00E7  = 0.51
+
+new values of adc OK
+0X011C-0X011E  = 340V
+0X00F3-0X00F4  = 300V
+0X00B8-0X00B9  = 0.84
+-----34------
+0X0096-0X0097  = 0.67
+-----8-------
+0X008E-0X008E  = 0.64
+-----28------
+0X0072-0X0072  = 0.51
+
+Change Log
+===================================================================
+Date   Change    Functions
+===================================================================
+08.10.2009  intermediate steps added between step 1&2 and 3&4
+20.10.2009  overvolt cut during erase, tdr time to 10sec, resetVolt1 also changed       
+26.10.2009  ADC read method changed, all functions test properly
+    alarm ofter step 5, 300v set point during erase,
+    working OK.
+27.10.2009  TDR switch and bicolor LED also added. 
+10.01.2009  Low Cut Added, init at step5, min TDR start time, gap adjustment  
+*****************************************************************/
+#include<pic.h>
+#include<htc.h>
+__CONFIG(0x3F4C);
+/*****************************************************************/
+#define SWITCH     RA2
+#define TDR     RA5
+#define BUZZER     RC3
+#define LED_GREEN   RC4
+#define LED_RED    RC5
+/*****************************************************************/
+#define LED_NORMAL() ((LED_GREEN=1),(LED_RED=0))
+#define LED_ERROR()  ((LED_RED=1),(LED_GREEN=0))
+#define LED_STANDBY() ((LED_RED=1),(LED_GREEN=1)) 
+
+#define NORMAL  1
+#define ERROR 2
+#define STANDBY 3
+#define LOW_CUT /*0x0058*/0x0050
+
+#define EEPROM_MAX_ADDRESS  128
+#define OVER_VOLT   0x00F6
+#define FACT1    34-3//gap adjusted
+#define FACT2    8-5
+#define FACT3    (36-5)+3//gap adjusted
+/*****************************************************************/
+#define RL1 RA1
+#define RL2 RC0
+#define RL3 RC1
+#define RL4 RC2
+/*****************************************************************/
+#define ADDR_SPH  0x00
+#define ADDR_SPL  0x01
+#define RL4_TIMER() ((F_RL4=1),(time=0),(btime=0),(state=STANDBY))
+#define RL4_OFF()   ((F_RL4=0),(RL4=0),(state=ERROR))
+//#define ADDR_STEP  0x01
+
+#define RL_OFF_ALL() ((RL1=0),(RL2=0),(RL3=~0),(RL4=0))
+#define RL_STEP0() ((RL1=0),(RL2=0),(RL3=0))
+#define RL_STEP1() ((RL1=0),(RL2=0),(RL3=1))
+#define RL_STEP12()((RL1=0),(RL2=1),(RL3=1))
+#define RL_STEP21()((RL1=0),(RL2=0),(RL3=0))
+#define RL_STEP2() ((RL1=0),(RL2=1),(RL3=0))
+#define RL_STEP3() ((RL1=0),(RL2=1),(RL3=1))
+#define RL_STEP34()((RL1=1),(RL2=1),(RL3=1))
+#define RL_STEP43()((RL1=0),(RL2=1),(RL3=0))
+#define RL_STEP4() ((RL1=1),(RL2=1),(RL3=0))
+#define RL_STEP5() ((RL1=1),(RL2=1),(RL3=1))
+/*****************************************************************/
+unsigned char counts;
+unsigned int adc_sum;
+bit F_SQ_WV,F_MSINT,F_NOTSET,F_BUZ,F_ALARM,F_RL4,F_TDR,F_LC;;
+unsigned char eepromAddress;
+unsigned int setVolt1,setVolt2;
+unsigned int resetVolt1,resetVolt2;
+unsigned char step;
+unsigned int time;
+unsigned int adc_result;
+unsigned int adc_val;
+unsigned int altime;
+unsigned char btime;
+unsigned char state;
+/*****************************************************************/
+void delay(unsigned int);
+void save_to_eeprom(unsigned int);
+void adc_init(void);
+void adc_read_10bit(void);
+void timer0_init(void);
+void interrupt t0_int(void);
+void calibrate_osc(void);
+void wait_for_adc(void);
+void delayms(void);
+void get_sine(void);
+void alarm_init(void);
+void init_main(void);
+/*****************************************************************/
+void interrupt t0_int(void)
+{
+ if(T0IF)
+ {
+  CLRWDT();
+  //TMR0=0x86;//2ms timer
+  TMR0=0xE0;//500uS timer with 4Mhz internal oscillator
+  if(F_RL4)
+  {
+   time++;
+   if(time>/*10000*/100)
+   {
+    F_TDR=1;
+    btime++;
+    time=0;
+    if(btime>12)
+    {
+     F_RL4=0;
+     RL4=1;
+     state=NORMAL;
+    }
+   }
+   if(/*(TDR==0)&&*/(F_TDR))
+   {
+    F_TDR=0;
+    F_RL4=0;
+    RL4=1;
+    state=NORMAL;
+   }
+  }
+  if(F_ALARM)
+  {
+   altime++;
+   if(altime>5000)
+   {
+    altime=0;
+    F_BUZ=1;
+   }
+  }
+/*  adc_read_10bit();
+
+  if((adc_result>50)&&(F_UH==0))
+   F_UH=1;
+  if(F_UH)
+  {
+   if((counts<16)&&(adc_result>50))
+   {
+    adc_sum+=adc_result;
+    counts++;
+   }
+   else if(counts==16)
+   {
+    //badc_val=adc_sum/counts;
+    //if(badc_val<0x01FF)
+    // adc_val=badc_val;
+    F_ADC_SAMPLE=0;
+    adc_val=adc_sum/counts;
+    F_ADC_SAMPLE=1;
+    counts=0;
+    adc_sum=0;
+    F_UH=0;
+   }
+   else
+   {
+    counts=0;
+    adc_sum=0;
+    F_UH=0;
+   }
+  }*/
+  T0IF=0;
+ }
+}
+
+void wait_for_adc()
+{
+ unsigned char k;
+ for(k=0;k<5;k++)
+ {
+  get_sine();
+ }
+}
+
+void get_sine()
+{
+ adc_result=0;
+ while(adc_result>50)
+  adc_read_10bit();
+ while(adc_result<=50)
+  adc_read_10bit();
+ adc_sum=0;
+ for(counts=0;counts<40;counts++)
+ {
+  adc_read_10bit();
+  adc_sum+=adc_result;
+  delayms();
+ }
+ adc_val=adc_sum/counts;
+}
+
+void delayms()
+{
+ unsigned char i;
+ for(i=0;i<50;i++);
+}
+void alarm_init()
+{
+ F_BUZ=0;
+ F_ALARM=0;
+ altime=0;
+}
+
+void beep(unsigned int b)
+{
+ BUZZER=1;
+ delay(b);
+ BUZZER=0;
+}
+  
+void init_main()
+{
+ WPUA2=1; 
+ TRISA2=1;//FOR SWITCH
+ TRISA5=1;//TDR SWITCH
+ TRISC3=0;//BUZZER  
+ TRISC4=0;//LED1 
+ TRISC5=0;//LED2
+ BUZZER=0;
+ 
+ TRISA1=0;//RL1
+ TRISC0=0;//RL2
+ TRISC1=0;//RL3
+ TRISC2=0;//RL4
+ F_TDR=0;
+}
+   
+void main()
+{
+
+ OSCCAL=_READ_OSCCAL_DATA();
+ adc_init();
+ timer0_init();
+ alarm_init();
+ init_main();
+ 
+
+ RL_OFF_ALL();  
+ RL4_OFF();  
+ RL4_TIMER(); 
+ eepromAddress=0;
+ F_NOTSET=0;
+
+ if(SWITCH==0)
+ {
+  BUZZER=1;
+  delay(60000);
+  EEPROM_WRITE(ADDR_SPH,0xFF);
+  EEPROM_WRITE(ADDR_SPL,0xFF);
+  BUZZER=0;
+  delay(10000);
+  beep(10000); 
+  delay(10000);
+  beep(10000);
+  while(SWITCH==0);
+  delay(10000);
+ }
+ step=5;
+ RL_STEP5();
+ 
+ setVolt1=EEPROM_READ(ADDR_SPH)<<8;
+ setVolt1|=EEPROM_READ(ADDR_SPL);
+ if(setVolt1==0xFFFF)
+ {
+  F_NOTSET=1;
+  setVolt1=OVER_VOLT;
+ }
+ else
+ {
+  beep(60000);
+ }
+ F_LC=1;
+ setVolt2=setVolt1+FACT1;
+ resetVolt1=setVolt1-FACT2;
+ resetVolt2=setVolt1-FACT3;
+ while(1)
+ {
+  get_sine();
+  if(state==NORMAL)
+   LED_NORMAL();
+  if(state==STANDBY)
+   LED_STANDBY();
+  if(state==ERROR)
+   LED_ERROR();
+  if(step==0)
+  {
+   if(adc_val>=setVolt1)
+   {
+    step++;
+    RL_STEP1();
+    wait_for_adc();
+    RL4=1;
+   
+    //EEPROM_WRITE(ADDR_STEP,step);
+   }
+   
+   if(adc_val<LOW_CUT)
+   {
+    if(F_LC)
+    {
+     RL4_OFF();
+     wait_for_adc();
+     F_LC=0;
+     BUZZER=1;
+     delay(60000);
+     BUZZER=0;
+     delay(60000);
+    }
+   }
+   else if((adc_val>(LOW_CUT+6)))
+   {
+    if(F_LC==0)
+    {
+     state=NORMAL;
+     RL4=1;
+     F_LC=1;
+    }
+   }
+  }
+  else if(step==1)
+  {
+   if(adc_val>=setVolt2)
+   {
+    step++;
+    RL_STEP12();
+    delay(4000);
+    RL_STEP2();
+    wait_for_adc();
+    //EEPROM_WRITE(ADDR_STEP,step);
+   }
+   else if(adc_val<resetVolt1)
+   {
+    step--;
+    RL_STEP0();
+    wait_for_adc();
+    //EEPROM_WRITE(ADDR_STEP,step);
+   }
+  }
+  else if(step==2)
+  {
+   if(adc_val>=setVolt1)
+   {
+    step++;
+    RL_STEP3();
+    wait_for_adc();
+    //EEPROM_WRITE(ADDR_STEP,step);
+   }
+   else if(adc_val<resetVolt2)
+   {
+    step--;
+    RL_STEP21();
+    delay(4000);
+    RL_STEP1();
+    wait_for_adc();
+    //EEPROM_WRITE(ADDR_STEP,step);
+   }
+  }
+  else if(step==3)
+  {
+   if(adc_val>=setVolt2)
+   {
+    step++;
+    RL_STEP34();
+    delay(4000);
+    RL_STEP4();
+    wait_for_adc();
+    //EEPROM_WRITE(ADDR_STEP,step);
+   }
+   else if(adc_val<resetVolt1)
+   {
+    step--;
+    RL_STEP2();
+    wait_for_adc();
+    //EEPROM_WRITE(ADDR_STEP,step);
+   }
+  }
+  else if(step==4)
+  {
+   if(adc_val>=setVolt1)
+   {
+    step++;
+    RL_STEP5();
+    wait_for_adc();
+    //EEPROM_WRITE(ADDR_STEP,step);
+   }
+   else if(adc_val<resetVolt2)
+   {
+    step--;
+    RL_STEP43();
+    delay(4000);
+    RL_STEP3();
+    wait_for_adc();
+    //EEPROM_WRITE(ADDR_STEP,step);
+   }
+  }
+  else if(step==5)
+  {
+   if(adc_val>(setVolt2+10))
+   {
+    step++;
+    //RL_OFF_ALL();
+    RL4_OFF();
+    wait_for_adc();
+    F_ALARM=1;
+    //EEPROM_WRITE(ADDR_STEP,step);
+   }
+   else if(adc_val<resetVolt1)
+   {
+    step--;
+    RL_STEP4();
+    wait_for_adc();
+    //EEPROM_WRITE(ADDR_STEP,step);
+   }
+  }
+  else if(step==6)
+  {
+   if(F_BUZ)
+   {
+    beep(20000);
+    F_BUZ=0;
+   }
+   if(adc_val<(setVolt2-10))
+   {
+    F_ALARM=0;
+    RL4_TIMER();    
+    delay(20000);
+    beep(20000);
+    delay(20000);
+    beep(8000);
+    delay(20000);        
+    beep(20000);
+    step--;
+    //RL_STEP5();
+
+    wait_for_adc();
+    //EEPROM_WRITE(ADDR_STEP,step);
+   }
+  }
+  //delay(10000);  
+  if((SWITCH==0)&&(F_NOTSET))
+  {
+   delay(40000);
+   if(SWITCH==0)
+   {
+    F_NOTSET=0;
+    BUZZER=1;
+    setVolt1=adc_val-3;
+    //save_to_eeprom(adc_val);
+    save_to_eeprom(setVolt1);
+    setVolt2=setVolt1+FACT1;
+    resetVolt1=setVolt1-FACT2;
+    resetVolt2=setVolt1-FACT3;
+    step=0;
+    delay(10000);
+    BUZZER=0;
+   }
+  }
+ }
+}
+
+void save_to_eeprom(unsigned int d)
+{
+ if(eepromAddress<EEPROM_MAX_ADDRESS)
+ {
+  EEPROM_WRITE(eepromAddress,d>>8);
+  eepromAddress++;
+  EEPROM_WRITE(eepromAddress,d);
+  eepromAddress++;
+ }
+}
+ 
+void adc_init()
+{
+ //ADCON0=0x00;//LEFT JUSTFIED AN0 CHANNEL
+ ADCON0=0x80;//RIGHT JUSTFIED AN0 CHANNEL
+ ADCON1=0x50;//FOSC/16
+ //ADCON1=0x30;//AD RC clock
+ ANSEL=0x01;//AN0 angalog channel
+ TRISA0=1;
+ ADON=1;
+ counts=0;
+ adc_sum=0;
+ adc_val=0;
+
+
+}
+void adc_read_10bit()
+{
+ GODONE=1;
+ while(GODONE);
+ adc_result=(ADRESH<<8)|ADRESL;
+}
+
+void timer0_init()
+{
+ OPTION=0x03;//divide by 16 prescale
+ //TMR0=0x86;//2ms timer with 4Mhz internal oscillator
+ TMR0=0xE0;//500uS timer with 4Mhz internal oscillator
+ T0IE=1;
+ PEIE=1;
+ GIE=1;
+} 
+
+void delay(unsigned int k)
+{
+ unsigned int i;
+ for(;k>0;k--) 
+

@@ -1,0 +1,9 @@
+main
+	__CC2DW
+		____DoICP
+	InitTimer0
+	DHT11_read
+		StartSignal
+		CheckResponse
+		ReadData
+Interrupt

@@ -1,0 +1,15 @@
+﻿
+Command                    Train voice
+------------------------------------------
+sigtrain 0 lon > light = বাতি জ্বলুক / জ্বলবে
+sigtrain 1 loff > light = বাতি নিবুক / নিভবে
+
+sigtrain 2 fon > fan = ফ্যান চালু 
+sigtrain 3 foff > fan = ফ্যান বন্ধ
+
+sigtrain 4 acon > AC = এসি চালু  
+sigtrain 5 acoff > AC = এসি বন্ধ 
+
+sigtrain 6 help > help = সাহায্য করুন 
+
+

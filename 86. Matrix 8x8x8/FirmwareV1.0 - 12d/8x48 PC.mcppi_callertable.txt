@@ -1,0 +1,6 @@
+main
+	I2C1_Init
+	load_text
+		EEPROM_Read
+	strlen
+	masking

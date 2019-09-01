@@ -1,0 +1,6 @@
+[PROJECTS]
+Count=2
+Project0=8x48 PC.mcppi
+Project1=..\GSM kit\GSM kit.mcppi
+[ActiveProject]
+Index=0

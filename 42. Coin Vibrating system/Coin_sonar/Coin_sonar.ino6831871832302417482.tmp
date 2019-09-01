@@ -1,0 +1,11 @@
+#define coin_1 2
+#define coin_2 3
+
+void setup() {
+  pinMode(coin_1, OUTPUT);
+  pinMode(coin_2, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(coin_1, HIGH);
+}

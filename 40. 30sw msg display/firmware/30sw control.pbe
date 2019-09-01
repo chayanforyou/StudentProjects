@@ -1,0 +1,4 @@
+16F877A,589,8,20
+Reminder! Line [2]	In file [C:\Users\antor\Google Drive\Embedded Projects\Tanvir Bhai\Projects\40.30sw msg display\firmware\30sw control.bas]	*** Ensure that all fuses are placed in the Config list, as devices have differing default settings! ***
+	PROGRAM COMPILED OK. 589 Words used from a possible 8192
+	8 Variables used in the 16F877A from a possible 368

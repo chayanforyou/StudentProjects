@@ -1,0 +1,38 @@
+#include <LiquidCrystal.h>
+#include <Servo.h>
+
+Servo servo;
+LiquidCrystal lcd(A0, A1, A2, A3, A4, A5);
+
+byte laser = 3;
+byte car_1_key = 4;
+byte car_2_key = 5;
+byte car_3_key = 6;
+byte car_4_key = 7;
+
+int pos;
+
+void setup() {
+  lcd.begin(16, 2);
+  servo.attach(2);
+  pinMode(laser, INPUT);
+  pinMode(car_1_key, INPUT);
+  pinMode(car_2_key, INPUT);
+  pinMode(car_3_key, INPUT);
+  pinMode(car_4_key, INPUT); 
+}
+
+void loop() {
+  lcd.setCursor(0, 0);
+  lcd.print("hello, world!");
+  for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+    // in steps of 1 degree
+    servo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15ms for the servo to reach the position
+  }
+  for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+    servo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15ms for the servo to reach the position
+  }
+}
+

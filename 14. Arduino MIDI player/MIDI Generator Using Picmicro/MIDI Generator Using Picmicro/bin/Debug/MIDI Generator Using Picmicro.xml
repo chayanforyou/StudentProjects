@@ -1,0 +1,396 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MIDI Generator Using Picmicro
+</name>
+</assembly>
+<members>
+<member name="T:MIDI_Generator_Using_Picmicro.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.C1">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.C2">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.C3">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.C4">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.C5">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.C6">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.C7">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.C8">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.C9">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.e_circle">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.G1">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.G2">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.G3">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.G4">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.G5">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.G6">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.G7">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.G8">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.G9">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.H1">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.H2">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.H3">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.H4">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.H5">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.H6">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.H7">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.H8">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.H9">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.K1">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.K2">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.K3">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.K4">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.K5">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.K6">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.K7">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.K8">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.K9">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.P1">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.P2">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.P3">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.P4">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.P5">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.P6">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.P7">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.P8">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.P9">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.PC1">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.PC2">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.PC3">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.PC4">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.PC5">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.PC6">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.PC7">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.PC8">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.PC9">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.r_circle">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.S1">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.S2">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.S3">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.S4">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.S5">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.S6">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.S7">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.S8">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.S9">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.T1">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.T2">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.T3">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.T4">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.T5">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.T6">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.T7">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.T8">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:MIDI_Generator_Using_Picmicro.My.Resources.Resources.T9">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+</members>
+</doc>

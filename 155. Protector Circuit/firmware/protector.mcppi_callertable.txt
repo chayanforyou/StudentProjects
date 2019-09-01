@@ -1,0 +1,17 @@
+main
+	__CC2DW
+		____DoICP
+	delay_control
+		check_delay_pin
+			ADC_Read
+				Delay_22us
+		show_display
+			Div_16x16_S
+				Div_16x16_S_L
+			clear_display
+	ADC_Read
+		Delay_22us
+	show_display
+		Div_16x16_S
+			Div_16x16_S_L
+		clear_display

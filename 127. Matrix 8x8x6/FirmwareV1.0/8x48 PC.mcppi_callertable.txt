@@ -1,0 +1,17 @@
+main
+	__CC2DW
+		____DoICP
+	UART1_Init
+	pc_mode
+		EEPROM_Write
+		UART1_Read_Text
+			UART1_Data_Ready
+			UART1_Read
+		strlen
+		UART1_Write_Text
+			UART1_Write
+	load_text
+		EEPROM_Read
+	strlen
+	____DoICP
+	masking

@@ -1,0 +1,37 @@
+
+#	PinName		Interface
+-----------------------------------
+1	MCLR
+2	AN0		GAS
+3	AN1		Color OUT
+	
+4	RA2		DTMF STD
+
+7	RA5		DTMF Q1
+8	RE0		DTMF Q2
+9	RE1		DTMF Q3
+10	RE2		DTMF Q4
+
+15	RC0		M3 B
+16	RC1		M3 A
+17	RC2		M1 B
+18	RC3		M1 A
+19	RD0		Servo 1
+20	RD1		Servo 1
+21	RD2		Buzzer
+
+23	RC4		M2 A
+24	RC5		M2 B
+25	RC6		M4 A
+26	RC7		M4 B
+27	RD4		Sound
+28	RD5		Color RED
+29	RD6		Color GREEN
+30	RD7		Color BLUE
+
+35	RB2		LCD RS
+36	RB3		LCD EN
+37	RB4		LCD Data
+38	RB5		LCD Data
+39	RB6		LCD Data
+40	RB7		LCD Data

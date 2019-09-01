@@ -1,0 +1,15 @@
+
+
+24hour clock.
+
+0 - Morning[Mo] 10:00 = 5 Watt
+
+morning - Midday[Md] 18:00 = 10 Watt
+
+midday - Night[Ni] 22:00 = 15 Watt
+
+Compiler: MikroC for PIC [program written]
+circuit Design: Proteus 8
+
+Skype: antor.mee@gmail.com
+Facebook: AntorOfficial

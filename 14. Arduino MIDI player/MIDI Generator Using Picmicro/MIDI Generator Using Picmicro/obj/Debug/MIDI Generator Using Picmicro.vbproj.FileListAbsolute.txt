@@ -1,0 +1,26 @@
+D:\1. Electronics\Antor's corner\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\bin\Debug\MIDI Generator Using Picmicro.exe.config
+D:\1. Electronics\Antor's corner\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\bin\Debug\MIDI Generator Using Picmicro.exe
+D:\1. Electronics\Antor's corner\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\bin\Debug\MIDI Generator Using Picmicro.pdb
+D:\1. Electronics\Antor's corner\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\bin\Debug\MIDI Generator Using Picmicro.xml
+D:\1. Electronics\Antor's corner\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI Generator Using Picmicro.vbprojResolveAssemblyReference.cache
+D:\1. Electronics\Antor's corner\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI_Generator_Using_Picmicro.Form1.resources
+D:\1. Electronics\Antor's corner\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI_Generator_Using_Picmicro.Resources.resources
+D:\1. Electronics\Antor's corner\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI Generator Using Picmicro.vbproj.GenerateResource.Cache
+D:\1. Electronics\Antor's corner\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI Generator Using Picmicro.exe
+D:\1. Electronics\Antor's corner\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI Generator Using Picmicro.xml
+D:\1. Electronics\Antor's corner\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI Generator Using Picmicro.pdb
+C:\Users\antor.TWOBROTHERS-PC\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\bin\Debug\MIDI Generator Using Picmicro.exe.config
+C:\Users\antor.TWOBROTHERS-PC\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI Generator Using Picmicro.exe
+C:\Users\antor.TWOBROTHERS-PC\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI Generator Using Picmicro.xml
+C:\Users\antor.TWOBROTHERS-PC\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI Generator Using Picmicro.pdb
+C:\Users\antor.TWOBROTHERS-PC\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\bin\Debug\MIDI Generator Using Picmicro.exe
+C:\Users\antor.TWOBROTHERS-PC\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\bin\Debug\MIDI Generator Using Picmicro.pdb
+C:\Users\antor.TWOBROTHERS-PC\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\bin\Debug\MIDI Generator Using Picmicro.xml
+C:\Users\antor.TWOBROTHERS-PC\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI Generator Using Picmicro.vbprojResolveAssemblyReference.cache
+C:\Users\antor.TWOBROTHERS-PC\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI_Generator_Using_Picmicro.Form1.resources
+C:\Users\antor.TWOBROTHERS-PC\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI_Generator_Using_Picmicro.Resources.resources
+C:\Users\antor.TWOBROTHERS-PC\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI Generator Using Picmicro.vbproj.GenerateResource.Cache
+C:\Users\antor\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\bin\Debug\MIDI Generator Using Picmicro.exe.config
+C:\Users\antor\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI Generator Using Picmicro.exe
+C:\Users\antor\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI Generator Using Picmicro.xml
+C:\Users\antor\Google Drive\Embedded Projects\Tanvir Bhai\Projects\14. Arduino MIDI player\MIDI Generator Using Picmicro\MIDI Generator Using Picmicro\obj\Debug\MIDI Generator Using Picmicro.pdb

@@ -1,0 +1,4 @@
+16F73,3014,161,20
+Reminder! Line [7]	In file [C:\Users\antor.TWOBROTHERS-PC\Google Drive\Embedded Projects\Raktim Sir\Nov 16\1.FP Voting Machine\Firmware\fingerp.bas]	*** Ensure that all fuses are placed in the Config list, as devices have differing default settings! ***
+	PROGRAM COMPILED OK. 3014 Words used from a possible 4096
+	161 Variables used in the 16F73 from a possible 192

@@ -1,0 +1,11 @@
+main
+	__CC2DW
+		____DoICP
+	Man_Send_Init
+	Man_Send
+		Manchester_1
+			Delay_500us
+		Manchester_0
+			Delay_500us
+		Manchester_Out
+			Delay_500us

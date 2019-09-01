@@ -1,0 +1,26 @@
+main
+	__CC2DW
+		____DoICP
+	kp_init
+	EEPROM_Read
+	kp_scan
+		Delay_1ms
+	setup
+		Delay_1sec
+		kp_scan
+			Delay_1ms
+		masking
+		clear_digit
+		blink
+			masking
+			clear_digit
+		atoi
+			isdigit
+			Mul_16X16_U
+		EEPROM_Write
+	segment_int
+		Div_16X16_U
+		masking
+		clear_digit
+	EEPROM_Write
+interrupt

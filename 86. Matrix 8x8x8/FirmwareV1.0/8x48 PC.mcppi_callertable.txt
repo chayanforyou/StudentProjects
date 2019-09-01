@@ -1,0 +1,13 @@
+main
+	I2C1_Init
+	load_text
+		read_EEPROM
+			I2C1_Start
+				I2C1_Is_Idle
+			I2C1_Wr
+			I2C1_Repeated_Start
+			I2C1_Rd
+			I2C1_Stop
+	strlen
+	____DoICP
+	masking

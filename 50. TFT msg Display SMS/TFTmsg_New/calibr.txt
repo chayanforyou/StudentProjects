@@ -1,0 +1,11 @@
+MCUFRIEND_kbv ID=0x7796  320 x 480
+
+const int XP=6,XM=A2,YP=A1,YM=7; //320x480 ID=0x7796
+const int TS_LEFT=897,TS_RT=225,TS_TOP=862,TS_BOT=140;
+PORTRAIT CALIBRATION     320 x 480
+x = map(p.x, LEFT=897, RT=225, 0, 320)
+y = map(p.y, TOP=862, BOT=140, 0, 480)
+Touch Pin Wiring XP=6 XM=A2 YP=A1 YM=7
+LANDSCAPE CALIBRATION    480 x 320
+x = map(p.y, LEFT=862, RT=140, 0, 480)
+y = map(p.x, TOP=225, BOT=897, 0, 320)

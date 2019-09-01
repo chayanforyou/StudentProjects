@@ -1,0 +1,14 @@
+    for(ll=0;ll<total;ll+=2){
+     for(refresh=0;refresh<40;refresh++){
+     disp = 0;
+     SH = 1; SH = 0; DS = 1; ST = 1; ST = 0;
+      for(col=0;col<16;col++){
+      portb =~ temp[ll + disp];
+      disp++;
+      portc =~ temp[ll + disp];
+      disp++;
+      delay_us(200);
+      SH = 1; SH = 0; DS = 0; ST = 1; ST = 0;
+      }
+     }
+    }

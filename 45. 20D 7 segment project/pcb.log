@@ -1,0 +1,5 @@
+# Writing all output to: C:\Users\antor\Google Drive\Embedded Projects\Tanvir Bhai\Projects\45. 20D 7 segment project\pcb.log
+set pad_wire_necking on
+bus diagonal
+fanout 10
+route 100

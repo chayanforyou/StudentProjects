@@ -1,0 +1,25 @@
+AT
+
+OK
+ATE0
+
+OK
+AT+cpin?
+
++CPIN: READY
+
+OK
+AT+CMGF=1
+
+OK
+AT+CNMI=1,2,0,0,0
+
+OK
+AT+CPBF="A"
+
++CPBF: 1,"+8801762557770",145,"A"
+
+OK
+
++CMT: "+8801762557770","A","17/03/12,11:13:36+24"
+On

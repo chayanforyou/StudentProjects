@@ -1,0 +1,24 @@
+main
+	__CC2DW
+		____DoICP
+	system
+		read_adc
+			ADC_Read
+				Delay_22us
+			int2double
+				NRM3232
+					RES032
+					SETFUN32
+					FIXSIGN32
+			Mul_32x32_FP
+				RES032
+				SETFOV32
+				SETFUN32
+			double2int
+				SETIOV3224
+	segment
+		Div_16x16_S
+			Div_16x16_S_L
+		clear_display
+	show_full
+		clear_display

@@ -1,0 +1,12 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F72 -DL -O11000005 -fo20 -N"D:\1. Electronics\Antor's corner\Others\Day counter RTC\firmware\daycounter.mcppi" -SP"C:\Program Files (x86)\mikroC PRO for PIC\Defs\" -SP"C:\Program Files (x86)\mikroC PRO for PIC\Uses\P16\" -SP"D:\1. Electronics\Antor's corner\Others\Day counter RTC\firmware\" -SP"C:\Program Files (x86)\mikroC PRO for PIC\Packages\DHT11\Uses\" "daycounter.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_CString.mcl" "__Lib_CStdlib.mcl" "__Lib_CMath.mcl" "__Lib_MemManager.mcl" "__Lib_Conversions.mcl" "__Lib_Sprinti.mcl" "__Lib_Sprintl.mcl" "__Lib_Time.mcl" "__Lib_Trigonometry.mcl" "__Lib_Button.mcl" "__Lib_Keypad4x4.mcl" "__Lib_Manchester.mcl" "__Lib_OneWire.mcl" "__Lib_PS2.mcl" "__Lib_Sound.mcl" "__Lib_SoftI2C.mcl" "__Lib_SoftSPI.mcl" "__Lib_SoftUART.mcl" "__Lib_ADC_A_A.mcl" "__Lib_PWM_c2.mcl" "__Lib_SPI_c345.mcl" "__Lib_PortExpander.mcl" "__Lib_CANSPI.mcl" "__Lib_CF.mcl" "__Lib_GlcdFonts.mcl" "__Lib_Glcd.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl" "__Lib_S1D13700.mcl" "__Lib_T6963C.mcl" "__Lib_SPIGlcd.mcl" "__Lib_SPILcd.mcl" "__Lib_SPILcd8.mcl" "__Lib_SPIT6963C.mcl" "__Lib_TouchPanel.mcl" "dht11.mcl"	 
+hint: 0	1139	Available RAM: 144 [bytes], Available ROM: 2048 [bytes]	 
+diagnostics: 0	122	Compilation Started	daycounter.c
+hint: 50	1163	Variable 'y' has been declared, but not used	daycounter.c
+diagnostics: 147	123	Compiled Successfully	daycounter.c
+diagnostics: 0	127	All files Compiled in 31 ms	 
+hint: 0	1144	Used RAM (bytes): 36 (25%)  Free RAM (bytes): 108 (75%)	Used RAM (bytes): 36 (25%)  Free RAM (bytes): 108 (75%)
+hint: 0	1144	Used ROM (program words): 659 (32%)  Free ROM (program words): 1389 (68%)	Used ROM (program words): 659 (32%)  Free ROM (program words): 1389 (68%)
+diagnostics: 0	125	Project Linked Successfully	daycounter.mcppi
+diagnostics: 0	128	Linked in 47 ms	 
+diagnostics: 0	129	Project 'daycounter.mcppi' completed: 125 ms	 
+diagnostics: 0	103	Finished successfully: 03 Feb 2017, 12:50:07	daycounter.mcppi

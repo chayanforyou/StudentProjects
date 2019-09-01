@@ -1,0 +1,627 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA_SIGNAL
+   (shape (circ TOP 177800 0 0))
+   (shape (circ I1 177800 0 0))
+   (shape (circ I2 177800 0 0))
+   (shape (circ I3 177800 0 0))
+   (shape (circ I4 177800 0 0))
+   (shape (circ I5 177800 0 0))
+   (shape (circ I6 177800 0 0))
+   (shape (circ I7 177800 0 0))
+   (shape (circ I8 177800 0 0))
+   (shape (circ I9 177800 0 0))
+   (shape (circ I10 177800 0 0))
+   (shape (circ I11 177800 0 0))
+   (shape (circ I12 177800 0 0))
+   (shape (circ I13 177800 0 0))
+   (shape (circ I14 177800 0 0))
+   (shape (circ BOT 177800 0 0))
+  )
+  )
+  (network_out
+   (Net #00000 
+   (rule
+   )
+   )
+   (Net #00001 
+   (rule
+   )
+   )
+   (Net #00002 
+   (rule
+   )
+   )
+   (Net #00003 
+   (rule
+   )
+   )
+   (Net #00004 
+   (rule
+   )
+   )
+   (Net #00005 
+   (rule
+   )
+   )
+   (Net #00006 
+   (rule
+   )
+   )
+   (Net #00007 
+   (rule
+   )
+   )
+   (Net #00008 
+   (rule
+   )
+   (wire (path BOT 121920  -11430000 4127500 -11430000 4292600 -11518900 4381500
+     -14986000 4381500 -15240000 4127500)
+    (connect (terminal pin M2-8) (terminal pin M1-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  -7620000 4127500 -7620000 3962400 -7708900 3873500
+     -11176000 3873500 -11430000 4127500)
+    (connect (terminal pin M3-8) (terminal pin M2-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  -3810000 4127500 -3810000 4292600 -3898900 4381500
+     -7366000 4381500 -7620000 4127500)
+    (connect (terminal pin M4-8) (terminal pin M3-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  0 4127500 0 3962400 -88900 3873500
+     -3556000 3873500 -3810000 4127500)
+    (connect (terminal pin M5-8) (terminal pin M4-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  3810000 4127500 3810000 4292600 3721100 4381500
+     254000 4381500 0 4127500)
+    (connect (terminal pin M6-8) (terminal pin M5-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  7620000 4127500 7620000 3962400 7531100 3873500
+     4064000 3873500 3810000 4127500)
+    (connect (terminal pin M7-8) (terminal pin M6-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  11430000 4127500 11430000 4292600 11341100 4381500
+     7874000 4381500 7620000 4127500)
+    (connect (terminal pin M8-8) (terminal pin M7-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  15240000 4127500 15240000 3962400 15151100 3873500
+     11684000 3873500 11430000 4127500)
+    (connect (terminal pin M9-8) (terminal pin M8-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  19050000 4127500 19050000 4292600 18961100 4381500
+     15494000 4381500 15240000 4127500)
+    (connect (terminal pin M10-8) (terminal pin M9-8))
+    (attr bus)
+   )
+   )
+   (Net #00009 
+   (rule
+   )
+   )
+   (Net #00010 
+   (rule
+   )
+   (wire (path BOT 121920  -11430000 1206500 -11430000 1371600 -11518900 1460500
+     -14986000 1460500 -15240000 1206500)
+    (connect (terminal pin M2-10) (terminal pin M1-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  -7620000 1206500 -7620000 1041400 -7708900 952500
+     -11176000 952500 -11430000 1206500)
+    (connect (terminal pin M3-10) (terminal pin M2-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  -3810000 1206500 -3810000 1371600 -3898900 1460500
+     -7366000 1460500 -7620000 1206500)
+    (connect (terminal pin M4-10) (terminal pin M3-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  0 1206500 0 1041400 -88900 952500
+     -3556000 952500 -3810000 1206500)
+    (connect (terminal pin M5-10) (terminal pin M4-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  3810000 1206500 3810000 1371600 3721100 1460500
+     254000 1460500 0 1206500)
+    (connect (terminal pin M6-10) (terminal pin M5-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  7620000 1206500 7620000 1041400 7531100 952500
+     4064000 952500 3810000 1206500)
+    (connect (terminal pin M7-10) (terminal pin M6-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  11430000 1206500 11430000 1371600 11341100 1460500
+     7874000 1460500 7620000 1206500)
+    (connect (terminal pin M8-10) (terminal pin M7-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  15240000 1206500 15240000 1041400 15151100 952500
+     11684000 952500 11430000 1206500)
+    (connect (terminal pin M9-10) (terminal pin M8-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  19050000 1206500 19050000 1371600 18961100 1460500
+     15494000 1460500 15240000 1206500)
+    (connect (terminal pin M10-10) (terminal pin M9-10))
+    (attr bus)
+   )
+   )
+   (Net #00011 
+   (rule
+   )
+   )
+   (Net #00012 
+   (rule
+   )
+   )
+   (Net #00013 
+   (rule
+   )
+   )
+   (Net #00014 
+   (rule
+   )
+   )
+   (Net #00015 
+   (rule
+   )
+   )
+   (Net #00016 
+   (rule
+   )
+   )
+   (Net #00017 
+   (rule
+   )
+   )
+   (Net #00018 
+   (rule
+   )
+   )
+   (Net #00019 
+   (rule
+   )
+   )
+   (Net #00020 
+   (rule
+   )
+   )
+   (Net #00021 
+   (rule
+   )
+   )
+   (Net #00022 
+   (rule
+   )
+   )
+   (Net #00023 
+   (rule
+   )
+   )
+   (Net #00024 
+   (rule
+   )
+   )
+   (Net #00025 
+   (rule
+   )
+   )
+   (Net #00026 
+   (rule
+   )
+   )
+   (Net #00027 
+   (rule
+   )
+   )
+   (Net #00028 
+   (rule
+   )
+   )
+   (Net #00029 
+   (rule
+   )
+   )
+   (Net #00030 
+   (rule
+   )
+   )
+   (Net #00031 
+   (rule
+   )
+   )
+   (Net #00032 
+   (rule
+   )
+   )
+   (Net #00033 
+   (rule
+   )
+   )
+   (Net #00034 
+   (rule
+   )
+   )
+   (Net #00035 
+   (rule
+   )
+   )
+   (Net #00036 
+   (rule
+   )
+   )
+   (Net #00037 
+   (rule
+   )
+   )
+   (Net #00038 
+   (rule
+   )
+   )
+   (Net #00039 
+   (rule
+   )
+   )
+   (Net #00040 
+   (rule
+   )
+   )
+   (Net #00041 
+   (rule
+   )
+   )
+   (Net #00042 
+   (rule
+   )
+   )
+   (Net #00043 
+   (rule
+   )
+   )
+   (Net #00044 
+   (rule
+   )
+   )
+   (Net #00045 
+   (rule
+   )
+   )
+   (Net #00046 
+   (rule
+   )
+   )
+   (Net #00047 
+   (rule
+   )
+   )
+   (Net #00048 
+   (rule
+   )
+   )
+   (Net #00049 
+   (rule
+   )
+   )
+   (Net #00050 
+   (rule
+   )
+   )
+   (Net #00051 
+   (rule
+   )
+   )
+   (Net #00052 
+   (rule
+   )
+   )
+   (Net #00053 
+   (rule
+   )
+   )
+   (Net #00054 
+   (rule
+   )
+   )
+   (Net #00055 
+   (rule
+   )
+   )
+   (Net #00056 
+   (rule
+   )
+   )
+   (Net #00057 
+   (rule
+   )
+   )
+   (Net #00058 
+   (rule
+   )
+   )
+   (Net #00059 
+   (rule
+   )
+   )
+   (Net #00060 
+   (rule
+   )
+   )
+   (Net #00061 
+   (rule
+   )
+   )
+   (Net #00062 
+   (rule
+   )
+   )
+   (Net #00063 
+   (rule
+   )
+   )
+   (Net #00064 
+   (rule
+   )
+   )
+   (Net #00065 
+   (rule
+   )
+   )
+   (Net #00066 
+   (rule
+   )
+   )
+   (Net #00067 
+   (rule
+   )
+   )
+   (Net #00068 
+   (rule
+   )
+   )
+   (Net #00069 
+   (rule
+   )
+   )
+   (Net #00070 
+   (rule
+   )
+   )
+   (Net #00071 
+   (rule
+   )
+   )
+   (Net #00072 
+   (rule
+   )
+   )
+   (Net #00073 
+   (rule
+   )
+   )
+   (Net #00074 
+   (rule
+   )
+   )
+   (Net #00075 
+   (rule
+   )
+   )
+   (Net #00076 
+   (rule
+   )
+   )
+   (Net #00077 
+   (rule
+   )
+   )
+   (Net #00078 
+   (rule
+   )
+   )
+   (Net #00079 
+   (rule
+   )
+   )
+   (Net #00080 
+   (rule
+   )
+   )
+   (Net #00081 
+   (rule
+   )
+   )
+   (Net #00082 
+   (rule
+   )
+   )
+   (Net #00083 
+   (rule
+   )
+   )
+   (Net #00084 
+   (rule
+   )
+   )
+   (Net #00085 
+   (rule
+   )
+   )
+   (Net #00086 
+   (rule
+   )
+   )
+   (Net #00087 
+   (rule
+   )
+   )
+   (Net #00088 
+   (rule
+   )
+   (wire (path BOT 121920  -11430000 190500 -11430000 355600 -11518900 444500
+     -14986000 444500 -15240000 190500)
+    (connect (terminal pin M12-8) (terminal pin M11-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  -7620000 190500 -7620000 25400 -7708900 -63500
+     -11176000 -63500 -11430000 190500)
+    (connect (terminal pin M13-8) (terminal pin M12-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  -3810000 190500 -3810000 355600 -3898900 444500
+     -7366000 444500 -7620000 190500)
+    (connect (terminal pin M14-8) (terminal pin M13-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  0 190500 0 25400 -88900 -63500
+     -3556000 -63500 -3810000 190500)
+    (connect (terminal pin M15-8) (terminal pin M14-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  3810000 190500 3810000 355600 3721100 444500
+     254000 444500 0 190500)
+    (connect (terminal pin M16-8) (terminal pin M15-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  7620000 190500 7620000 25400 7531100 -63500
+     4064000 -63500 3810000 190500)
+    (connect (terminal pin M17-8) (terminal pin M16-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  11430000 190500 11430000 355600 11341100 444500
+     7874000 444500 7620000 190500)
+    (connect (terminal pin M18-8) (terminal pin M17-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  15240000 190500 15240000 25400 15151100 -63500
+     11684000 -63500 11430000 190500)
+    (connect (terminal pin M19-8) (terminal pin M18-8))
+    (attr bus)
+   )
+   (wire (path BOT 121920  19050000 190500 19050000 355600 18961100 444500
+     15494000 444500 15240000 190500)
+    (connect (terminal pin M20-8) (terminal pin M19-8))
+    (attr bus)
+   )
+   )
+   (Net #00089 
+   (rule
+   )
+   )
+   (Net #00090 
+   (rule
+   )
+   (wire (path BOT 121920  -11430000 -2730500 -11430000 -2565400 -11518900 -2476500
+     -14986000 -2476500 -15240000 -2730500)
+    (connect (terminal pin M12-10) (terminal pin M11-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  -7620000 -2730500 -7620000 -2895600 -7708900 -2984500
+     -11176000 -2984500 -11430000 -2730500)
+    (connect (terminal pin M13-10) (terminal pin M12-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  -3810000 -2730500 -3810000 -2565400 -3898900 -2476500
+     -7366000 -2476500 -7620000 -2730500)
+    (connect (terminal pin M14-10) (terminal pin M13-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  0 -2730500 0 -2895600 -88900 -2984500
+     -3556000 -2984500 -3810000 -2730500)
+    (connect (terminal pin M15-10) (terminal pin M14-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  3810000 -2730500 3810000 -2565400 3721100 -2476500
+     254000 -2476500 0 -2730500)
+    (connect (terminal pin M16-10) (terminal pin M15-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  7620000 -2730500 7620000 -2895600 7531100 -2984500
+     4064000 -2984500 3810000 -2730500)
+    (connect (terminal pin M17-10) (terminal pin M16-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  11430000 -2730500 11430000 -2565400 11341100 -2476500
+     7874000 -2476500 7620000 -2730500)
+    (connect (terminal pin M18-10) (terminal pin M17-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  15240000 -2730500 15240000 -2895600 15151100 -2984500
+     11684000 -2984500 11430000 -2730500)
+    (connect (terminal pin M19-10) (terminal pin M18-10))
+    (attr bus)
+   )
+   (wire (path BOT 121920  19050000 -2730500 19050000 -2565400 18961100 -2476500
+     15494000 -2476500 15240000 -2730500)
+    (connect (terminal pin M20-10) (terminal pin M19-10))
+    (attr bus)
+   )
+   )
+   (Net #00091 
+   (rule
+   )
+   )
+   (Net #00092 
+   (rule
+   )
+   )
+   (Net #00093 
+   (rule
+   )
+   )
+   (Net #00094 
+   (rule
+   )
+   )
+   (Net #00095 
+   (rule
+   )
+   )
+  )
+ )

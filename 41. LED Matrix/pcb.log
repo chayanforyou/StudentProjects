@@ -1,0 +1,5 @@
+# Writing all output to: C:\Users\antor\Google Drive\Embedded Projects\Tanvir Bhai\Projects\41. LED Matrix\pcb.log
+set pad_wire_necking on
+bus diagonal
+fanout 5
+route 50

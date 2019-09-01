@@ -1,0 +1,5 @@
+main
+	UART1_Init
+	UART1_Read
+	all_on
+	all_off

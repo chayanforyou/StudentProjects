@@ -1,0 +1,11 @@
+main
+	blink
+		leds
+	right2left
+		leds
+	left2right
+		leds
+	right2left_2
+		leds
+	left2right_2
+		leds

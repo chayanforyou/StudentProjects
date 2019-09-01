@@ -1,0 +1,5 @@
+16F73,1243,42,20
+Reminder! Line [7]	In file [D:\1.Electronics\Abrar]	*** Ensure that all fuses are placed in the Config list, as devices have differing default settings! ***
+Reminder! Line [17]	In file [D:\1.Electronics\Abrar]	*** Unrecognised DECLARE. Creating an assembler #DEFINE directive! ***
+	PROGRAM COMPILED OK. 1243 Words used from a possible 4096
+	42 Variables used in the 16F73 from a possible 192

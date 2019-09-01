@@ -1,0 +1,1327 @@
+MPASM  5.42                               A.S   6-28-2017  9:30:07         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+
+                      00002         list
+                      00003 ;{
+                      00004 ;FILE F1 = C:\USERS\ANTOR\GOOGLE~1\EMBEDD~1\TANVIR~1\PROJECTS\1997FB~1.IRR\FIRMWARE\IR_HOME.BAS
+                      00005 ;FILE F2 = C:\USERS\ANTOR\GOOGLE~1\EMBEDD~1\TANVIR~1\PROJECTS\1997FB~1.IRR\FIRMWARE\IR_HOME.PRP
+                      00006 ;}
+                      00007 ;[Variable Listing]
+                      00008 ;speed,002A,DT_BYTE,1
+                      00009 ;sony,002C,DT_WORD,2
+                      00010 ;FAN,0007.1,DT_BIT
+                      00011 ;L_1,0007.2,DT_BIT
+                      00012 ;L_2,0007.3,DT_BIT
+                      00013 ;L_3,0007.4,DT_BIT
+                      00014 ;L_4,0007.5,DT_BIT
+                      00015 ;L_5,0005.0,DT_BIT
+                      00016 ;L_6,0005.1,DT_BIT
+                      00017 ;L_7,0005.2,DT_BIT
+                      00018 ;flag,002B.0,DT_BIT
+                      00019 ;cmd,002C,DT_BYTE,1
+                      00020 ;[End Listing]
+                      00021 ;[TOTAL VARS] 14
+
+                      00023 #define CONFIG_REQ 1
+MESSAGE[308]: WARNING LEVEL SUPERSEDED BY COMMAND LINE VALUE. (2)
+                      00024  LIST  P = 16F676, F = INHX8M, W = 2, X = ON, R = DEC, MM = ON, N = 0, C = 255
+  00000000            00025 INDF equ 0X0000
+  00000001            00026 TMR0 equ 0X0001
+  00000002            00027 PCL equ 0X0002
+  00000003            00028 STATUS equ 0X0003
+  00000004            00029 FSR equ 0X0004
+  00000005            00030 PORTA equ 0X0005
+  00000006            00031 PORTB equ 0X0006
+  00000007            00032 PORTC equ 0X0007
+  0000000A            00033 PCLATH equ 0X000A
+  0000000B            00034 INTCON equ 0X000B
+  0000000C            00035 PIR1 equ 0X000C
+  0000000E            00036 TMR1L equ 0X000E
+  0000000F            00037 TMR1LH equ 0X000F
+  0000000F            00038 TMR1H equ 0X000F
+  00000010            00039 T1CON equ 0X0010
+  00000019            00040 CMCON equ 0X0019
+  0000001E            00041 ADRESLH equ 0X001E
+  0000001E            00042 ADRESH equ 0X001E
+  0000001F            00043 ADCON0 equ 0X001F
+  00000081            00044 OPTION_REG equ 0X0081
+  00000085            00045 TRISA equ 0X0085
+  00000086            00046 TRISB equ 0X0086
+  00000087            00047 TRISC equ 0X0087
+  0000008C            00048 PIE1 equ 0X008C
+  0000008E            00049 PCON equ 0X008E
+  00000090            00050 OSCCAL equ 0X0090
+  00000091            00051 ANSEL equ 0X0091
+  00000095            00052 WPU equ 0X0095
+  00000095            00053 WPUA equ 0X0095
+  00000096            00054 IOC equ 0X0096
+  00000096            00055 IOCA equ 0X0096
+  00000099            00056 VRCON equ 0X0099
+  0000009A            00057 EEDATL equ 0X009A
+  0000009A            00058 EEDATA equ 0X009A
+  0000009A            00059 EEDAT equ 0X009A
+  0000009B            00060 EEADR equ 0X009B
+  0000009C            00061 EECON1 equ 0X009C
+  0000009D            00062 EECON2 equ 0X009D
+  0000009E            00063 ADRESL equ 0X009E
+  0000009F            00064 ADCON1 equ 0X009F
+  00000007            00065 IRP=7
+  00000006            00066 RP1=6
+  00000005            00067 RP0=5
+  00000004            00068 NOT_TO=4
+  00000003            00069 NOT_PD=3
+  00000002            00070 Z=2
+  00000001            00071 DC=1
+  00000000            00072 C=0
+  00000007            00073 GIE=7
+  00000006            00074 PEIE=6
+  00000005            00075 T0IE=5
+  00000004            00076 INTE=4
+  00000003            00077 RAIE=3
+  00000002            00078 T0IF=2
+  00000001            00079 INTF=1
+  00000000            00080 RAIF=0
+  00000007            00081 EEIF=7
+  00000006            00082 ADIF=6
+  00000003            00083 CMIF=3
+  00000000            00084 T1IF=0
+  00000000            00085 TMR1IF=0
+  00000006            00086 TMR1GE=6
+  00000005            00087 T1CKPS1=5
+  00000004            00088 T1CKPS0=4
+  00000003            00089 T1OSCEN=3
+  00000002            00090 NOT_T1SYNC=2
+  00000001            00091 TMR1CS=1
+  00000000            00092 TMR1ON=0
+  00000006            00093 COUT=6
+  00000004            00094 CINV=4
+  00000003            00095 CIS=3
+  00000002            00096 CM2=2
+  00000001            00097 CM1=1
+  00000000            00098 CM0=0
+  00000007            00099 ADFM=7
+  00000006            00100 VCFG=6
+  00000004            00101 CHS2=4
+  00000003            00102 CHS1=3
+  00000002            00103 CHS0=2
+  00000001            00104 GO=1
+  00000001            00105 NOT_DONE=1
+  00000001            00106 GO_DONE=1
+  00000001            00107 PP_GO_DONE=1
+  00000000            00108 ADON=0
+  00000007            00109 NOT_GPPU=7
+  00000007            00110 NOT_RAPU=7
+  00000006            00111 INTEDG=6
+  00000005            00112 T0CS=5
+  00000004            00113 T0SE=4
+  00000003            00114 PSA=3
+  00000002            00115 PS2=2
+  00000001            00116 PS1=1
+  00000000            00117 PS0=0
+  00000007            00118 EEIE=7
+  00000006            00119 ADIE=6
+  00000003            00120 CMIE=3
+  00000000            00121 T1IE=0
+  00000000            00122 TMR1IE=0
+  00000001            00123 NOT_POR=1
+  00000000            00124 NOT_BOD=0
+  00000007            00125 CAL5=7
+  00000006            00126 CAL4=6
+  00000005            00127 CAL3=5
+  00000004            00128 CAL2=4
+  00000003            00129 CAL1=3
+  00000002            00130 CAL0=2
+  00000007            00131 ANS7=7
+  00000006            00132 ANS6=6
+  00000005            00133 ANS5=5
+  00000004            00134 ANS4=4
+  00000003            00135 ANS3=3
+  00000002            00136 ANS2=2
+  00000001            00137 ANS1=1
+  00000000            00138 ANS0=0
+  00000007            00139 VREN=7
+  00000005            00140 VRR=5
+  00000003            00141 VR3=3
+  00000002            00142 VR2=2
+  00000001            00143 VR1=1
+  00000000            00144 VR0=0
+  00000003            00145 WRERR=3
+  00000003            00146 PP_WRERR=3
+  00000002            00147 WREN=2
+  00000002            00148 PP_WREN=2
+  00000001            00149 WR=1
+  00000001            00150 PP_WR=1
+  00000000            00151 RD=0
+  00000000            00152 PP_RD=0
+  00000006            00153 ADCS2=6
+  00000005            00154 ADCS1=5
+  00000004            00155 ADCS0=4
+  000000FF            00156   __MAXRAM 0XFF
+                      00157   __BADRAM 0X06, 0X08-0X09, 0X0D, 0X11-0X18, 0X1A-0X1D, 0X60-0X7F
+                      00158   __BADRAM 0X86, 0X88-0X89, 0X8D, 0X8F, 0X92-0X94, 0X97-0X98, 0XE0-0XFF
+  00003EFF            00159 CPD_ON equ 0X3EFF
+  00003FFF            00160 CPD_OFF equ 0X3FFF
+  00003F7F            00161 CP_ON equ 0X3F7F
+  00003FFF            00162 CP_OFF equ 0X3FFF
+  00003FFF            00163 BODEN equ 0X3FFF
+  00003FBF            00164 BODEN_OFF equ 0X3FBF
+  00003FFF            00165 MCLRE_ON equ 0X3FFF
+  00003FDF            00166 MCLRE_OFF equ 0X3FDF
+  00003FFF            00167 PWRTE_OFF equ 0X3FFF
+  00003FEF            00168 PWRTE_ON equ 0X3FEF
+  00003FFF            00169 WDT_ON equ 0X3FFF
+  00003FF7            00170 WDT_OFF equ 0X3FF7
+  00003FF8            00171 LP_OSC equ 0X3FF8
+  00003FF9            00172 XT_OSC equ 0X3FF9
+  00003FFA            00173 HS_OSC equ 0X3FFA
+  00003FFB            00174 EC_OSC equ 0X3FFB
+  00003FFC            00175 INTRC_OSC_NOCLKOUT equ 0X3FFC
+  00003FFD            00176 INTRC_OSC_CLKOUT equ 0X3FFD
+  00003FFE            00177 EXTRC_OSC_NOCLKOUT equ 0X3FFE
+  00003FFF            00178 EXTRC_OSC_CLKOUT equ 0X3FFF
+  00000000            00179 WDTE_OFF equ 0X0000
+  00000008            00180 WDTE_ON equ 0X0008
+  00000003            00181 FOSC_EC equ 0X0003
+  00000007            00182 FOSC_EXTRCCLK equ 0X0007
+  00000006            00183 FOSC_EXTRCIO equ 0X0006
+  00000002            00184 FOSC_HS equ 0X0002
+  00000005            00185 FOSC_INTRCCLK equ 0X0005
+  00000004            00186 FOSC_INTRCIO equ 0X0004
+  00000000            00187 FOSC_LP equ 0X0000
+  00000001            00188 FOSC_XT equ 0X0001
+  00000000            00189 BOREN_OFF equ 0X0000
+  00000040            00190 BOREN_ON equ 0X0040
+
+                      00194 #define __16F676 1
+                      00195 #define XTAL 20
+                      00196 #define _CORE 14
+                      00197 #define _MAXRAM 64
+                      00198 #define _RAM_END 0X0040
+                      00199 #define _MAXMEM 1024
+                      00200 #define _ADC 8
+                      00201 #define _ADC_RES 10
+                      00202 #define _EEPROM 128
+                      00203 #define _PAGES 1
+                      00204 #define _BANKS 2
+                      00205 #define RAM_BANKS 1
+                      00206 #define _USART 0
+                      00207 #define _USB 0
+                      00208 #define _FLASH 0
+                      00209 #define _CWRITE_BLOCK 0
+                      00210 #define BANK0_START 0X20
+                      00211 #define BANK0_END 0X5F
+                      00212 #define _SYSTEM_VARIABLE_COUNT 10
+  00000000            00213 ram_bank = 0
+  00000000            00214 CURRENT@PAGE = 0
+  00000000            00215 DEST@PAGE = 0
+                      00216 #define LCD#TYPE 0
+                      00218 f@call macro PDEST
+                      00219 if(PDEST < 1)
+                      00220 else
+                      00221 if(PDEST > $)
+                      00222 else
+                      00223 endif
+                      00224 endif
+                      00225         call PDEST
+                      00226         endm
+                      00227 F@JUMP macro PDEST
+                      00228 if(PDEST < 1)
+                      00229 else
+                      00230 if(PDEST > $)
+                      00231 else
+                      00232 endif
+                      00233 endif
+                      00234         goto PDEST
+                      00235         endm
+                      00236 set@page macro PDEST
+                      00237         endm
+                      00238 s@b     macro pVarin
+                      00239 if((pVarin & 384) == 0)
+                      00240 if(ram_bank == 1)
+                      00241         bcf 3,5
+                      00242 endif
+                      00243 if(ram_bank == 2)
+                      00244         bcf 3,6
+                      00245 endif
+                      00246 if(ram_bank == 3)
+                      00247         bcf 3,5
+                      00248         bcf 3,6
+                      00249 endif
+                      00250 ram_bank = 0
+                      00251 endif
+                      00252 if((pVarin & 384) == 128)
+                      00253 if(ram_bank == 0)
+                      00254         bsf 3,5
+                      00255 endif
+                      00256 if(ram_bank == 2)
+                      00257         bsf 3,5
+                      00258         bcf 3,6
+                      00259 endif
+                      00260 if(ram_bank == 3)
+                      00261         bcf 3,6
+                      00262 endif
+                      00263 ram_bank = 1
+                      00264 endif
+                      00265 if((pVarin & 384) == 256)
+                      00266 if(ram_bank == 0)
+                      00267         bsf 3,6
+                      00268 endif
+                      00269 if(ram_bank == 1)
+                      00270         bcf 3,5
+                      00271         bsf 3,6
+                      00272 endif
+                      00273 if(ram_bank == 3)
+                      00274         bcf 3,5
+                      00275 endif
+                      00276 ram_bank = 2
+                      00277 endif
+                      00278         endm
+                      00279 r@b     macro
+                      00280 if((ram_bank & 1) != 0)
+                      00281         bcf 3,5
+                      00282 endif
+                      00283 if((ram_bank & 2) != 0)
+                      00284         bcf 3,6
+                      00285 endif
+                      00286 ram_bank = 0
+                      00287         endm
+                      00288 jump macro PLABEL
+                      00289     goto PLABEL
+                      00290     endm
+                      00291 wreg_byte macro pByteOut
+                      00292     s@b pByteOut
+                      00293     movwf pByteOut
+                      00294     r@b
+                      00295     endm
+                      00296 wreg_bit macro pVarOut,pBitout
+                      00297     s@b pVarOut
+                      00298     andlw 1
+                      00299     btfsc STATUS,2
+                      00300     bcf pVarOut,pBitout
+                      00301     btfss STATUS,2
+                      00302     bsf pVarOut,pBitout
+                      00303     r@b
+                      00304     endm
+                      00305 wreg_word macro pWordOut
+                      00306     s@b pWordOut
+                      00307     movwf pWordOut
+                      00308     s@b pWordOut+1
+                      00309     clrf pWordOut+1
+                      00310     r@b
+                      00311     endm
+                      00312 wreg_dword macro pDwordOut
+                      00313     s@b pDwordOut+3
+                      00314     clrf pDwordOut+3
+                      00315     s@b pDwordOut+2
+                      00316     clrf pDwordOut+2
+                      00317     s@b pDwordOut+1
+                      00318     clrf pDwordOut+1
+                      00319     s@b pDwordOut
+                      00320     movwf pDwordOut
+                      00321     r@b
+                      00322     endm
+                      00323 byte_wreg macro pByteIn
+                      00324     s@b pByteIn
+                      00325     movf pByteIn,W
+                      00326     r@b
+                      00327     endm
+                      00328 num_wreg macro pNumIn
+                      00329     movlw (pNumIn & 255)
+                      00330     endm
+                      00331 num_byte macro pNumIn,pByteOut
+                      00332     s@b pByteOut
+                      00333 if(pNumIn == 0)
+                      00334     clrf pByteOut
+                      00335 else
+                      00336     movlw (pNumIn & 255)
+                      00337     movwf pByteOut
+                      00338 endif
+                      00339     r@b
+                      00340     endm
+                      00341 num_bit macro pNumIn,pVarOut,pBitout
+                      00342     s@b pVarOut
+                      00343 if((pNumIn & 1) == 1)
+                      00344     bsf pVarOut,pBitout
+                      00345 else
+                      00346     bcf pVarOut,pBitout
+                      00347 endif
+                      00348     r@b
+                      00349     endm
+                      00350 num_word macro pNumIn,pWordOut
+                      00351 if((pNumIn & 255) == 0)
+                      00352     s@b pWordOut
+                      00353     clrf pWordOut
+                      00354 else
+                      00355     s@b pWordOut
+                      00356     movlw low (pNumIn)
+                      00357     movwf pWordOut
+                      00358 endif
+                      00359 if(((pNumIn >> 8) & 255) == 0)
+                      00360     s@b pWordOut+1
+                      00361     clrf pWordOut+1
+                      00362 else
+                      00363     s@b pWordOut+1
+                      00364     movlw high (pNumIn)
+                      00365     movwf pWordOut+1
+                      00366 endif
+                      00367     r@b
+                      00368     endm
+                      00369 num_dword macro pNumIn,pDwordOut
+                      00370 if ((pNumIn >> 24 & 255) == 0)
+                      00371     s@b pDwordOut+3
+                      00372     clrf pDwordOut+3
+                      00373 else
+                      00374     s@b pDwordOut+3
+                      00375     movlw ((pNumIn >> 24) & 255)
+                      00376     movwf pDwordOut+3
+                      00377 endif
+                      00378 if( ((pNumIn >> 16) & 255) == 0)
+                      00379     s@b pDwordOut+2
+                      00380     clrf pDwordOut+2
+                      00381 else
+                      00382     s@b pDwordOut+2
+                      00383     movlw ((pNumIn >> 16) & 255)
+                      00384     movwf pDwordOut+2
+                      00385 endif
+                      00386 if( ((pNumIn >> 8) & 255) == 0)
+                      00387     s@b pDwordOut+1
+                      00388     clrf pDwordOut+1
+                      00389 else
+                      00390     s@b pDwordOut+1
+                      00391     movlw high (pNumIn)
+                      00392     movwf pDwordOut+1
+                      00393 endif
+                      00394 if((pNumIn & 255) == 0)
+                      00395     s@b pDwordOut
+                      00396     clrf pDwordOut
+                      00397 else
+                      00398     s@b pDwordOut
+                      00399     movlw low (pNumIn)
+                      00400     movwf pDwordOut
+                      00401 endif
+                      00402     r@b
+                      00403     endm
+                      00404 bit_wreg macro pVarin,pBitIn
+                      00405     s@b pVarin
+                      00406     clrw
+                      00407     btfsc pVarin,pBitIn
+                      00408     movlw 1
+                      00409     r@b
+                      00410     endm
+                      00411 bit_byte macro pVarin,pBitIn,pByteOut
+                      00412     s@b pVarin
+                      00413     clrw
+                      00414     btfsc pVarin,pBitIn
+                      00415     movlw 1
+                      00416     s@b pByteOut
+                      00417     movwf pByteOut
+                      00418     r@b
+                      00419     endm
+                      00420 bit_bit macro pVarin,pBitIn,pVarOut,pBitout
+                      00421 if((pVarin & 65408) == (pVarOut & 65408))
+                      00422     s@b pVarOut
+                      00423     btfsc pVarin,pBitIn
+                      00424     bsf pVarOut,pBitout
+                      00425     btfss pVarin,pBitIn
+                      00426     bcf pVarOut,pBitout
+                      00427 else
+                      00428     s@b pVarin
+                      00429     clrdc
+                      00430     btfsc pVarin,pBitIn
+                      00431     setdc
+                      00432     s@b pVarOut
+                      00433     skpndc
+                      00434     bsf pVarOut,pBitout
+                      00435     skpdc
+                      00436     bcf pVarOut,pBitout
+                      00437 endif
+                      00438     endm
+                      00439 bit_word macro pVarin,pBitIn,pWordOut
+                      00440     s@b pWordOut+1
+                      00441     clrf pWordOut+1
+                      00442     bit_byte pVarin,pBitIn,pWordOut
+                      00443     endm
+                      00444 bit_dword macro pVarin,pBitIn,pDwordOut
+                      00445     s@b pDwordOut+3
+                      00446     clrf pDwordOut+3
+                      00447     s@b pDwordOut+2
+                      00448     clrf pDwordOut+2
+                      00449     s@b pDwordOut+1
+                      00450     clrf pDwordOut+1
+                      00451     bit_byte pVarin,pBitIn,pDwordOut
+                      00452     endm
+                      00453 word_wreg macro pWordIn
+                      00454     byte_wreg pWordIn
+                      00455     endm
+                      00456 word_byte macro pWordIn,pByteOut
+                      00457     byte_byte pWordIn,pByteOut
+                      00458     endm
+                      00459 word_bit macro pWordIn,pVarOut,pBitout
+                      00460     byte_bit pWordIn, pVarOut, pBitout
+                      00461     endm
+                      00462 word_word macro pWordIn,pWordOut
+                      00463     s@b pWordIn+1
+                      00464     movf pWordIn+1,W
+                      00465     s@b pWordOut+1
+                      00466     movwf pWordOut+1
+                      00467     byte_byte pWordIn,pWordOut
+                      00468     endm
+                      00469 word_dword macro pWordIn,pDwordOut
+                      00470     s@b pDwordOut+3
+                      00471     clrf pDwordOut+3
+                      00472     s@b pDwordOut+2
+                      00473     clrf pDwordOut+2
+                      00474     byte_byte pWordIn+1,pDwordOut+1
+                      00475     byte_byte pWordIn,pDwordOut
+                      00476     endm
+                      00477 byte_byte macro pByteIn,pByteOut
+                      00478     s@b pByteIn
+                      00479     movf pByteIn,W
+                      00480     s@b pByteOut
+                      00481     movwf pByteOut
+                      00482     r@b
+                      00483     endm
+                      00484 byte_word macro pByteIn,pWordOut
+                      00485     s@b pWordOut+1
+                      00486     clrf pWordOut+1
+                      00487     byte_byte pByteIn,pWordOut
+                      00488     endm
+                      00489 byte_dword macro pByteIn,pDwordOut
+                      00490     s@b pDwordOut+3
+                      00491     clrf pDwordOut+3
+                      00492     s@b pDwordOut+2
+                      00493     clrf pDwordOut+2
+                      00494     s@b pDwordOut+1
+                      00495     clrf pDwordOut+1
+                      00496     byte_byte pByteIn,pDwordOut
+                      00497     endm
+                      00498     byte_bit macro pByteIn,pVarOut,pBitout
+                      00499 if((pByteIn & 65408) == (pVarOut & 65408))
+                      00500     s@b pByteIn
+                      00501     btfsc pByteIn,0
+                      00502     bsf pVarOut,pBitout
+                      00503     btfss pByteIn,0
+                      00504     bcf pVarOut,pBitout
+                      00505 else
+                      00506     s@b pByteIn
+                      00507     rrf pByteIn,W
+                      00508     s@b pVarOut
+                      00509     skpnc
+                      00510     bsf pVarOut,pBitout
+                      00511     skpc
+                      00512     bcf pVarOut,pBitout
+                      00513 endif
+                      00514     r@b
+                      00515     endm
+                      00516 dword_wreg macro pDwordIn
+                      00517     byte_wreg pDwordIn
+                      00518     endm
+                      00519 dword_byte macro pDwordIn,pByteOut
+                      00520     byte_byte pDwordIn,pByteOut
+                      00521     endm
+                      00522 dword_word macro pDwordIn,pWordOut
+                      00523     s@b pDwordIn+1
+                      00524     movf pDwordIn+1,W
+                      00525     s@b pWordOut+1
+                      00526     movwf pWordOut+1
+                      00527     byte_byte pDwordIn,pWordOut
+                      00528     endm
+                      00529 dword_dword macro pDwordIn,pDwordOut
+                      00530     byte_byte pDwordIn+3,pDwordOut+3
+                      00531     byte_byte pDwordIn+2,pDwordOut+2
+                      00532     byte_byte pDwordIn+1,pDwordOut+1
+                      00533     byte_byte pDwordIn,pDwordOut
+                      00534     endm
+                      00535 dword_bit macro pDwordIn,pVarOut,pBitout
+                      00536     byte_bit pDwordIn,pVarOut,pBitout
+                      00537     endm
+  0000                00538 variable CURRENT@PAGE = 0
+  0000                00539 variable PDESTINATION@PAGE = 0
+                      00540 FIND@PAGE macro pLabelIn
+                      00541 local CURRENT_ADDR = $
+                      00542 local DEST_ADDR = pLabelIn
+                      00543 if((CURRENT_ADDR >= 0X1800) && (CURRENT_ADDR <= 0X2000))
+                      00544     CURRENT@PAGE = 3
+                      00545 endif
+                      00546 if((CURRENT_ADDR >= 0X1000) && (CURRENT_ADDR <= 0X1800))
+                      00547     CURRENT@PAGE = 2
+                      00548 endif
+                      00549 if((CURRENT_ADDR >= 0X0800) && (CURRENT_ADDR <= 0X1000))
+                      00550     CURRENT@PAGE = 1
+                      00551 endif
+                      00552 if((CURRENT_ADDR >= 0) && (CURRENT_ADDR <= 0X0800))
+                      00553     CURRENT@PAGE = 0
+                      00554 endif
+                      00555 if((DEST_ADDR >= 0X1800) && (DEST_ADDR <= 0X2000))
+                      00556     PDESTINATION@PAGE = 3
+                      00557 endif
+                      00558 if((DEST_ADDR >= 0X1000) && (DEST_ADDR <= 0X1800))
+                      00559     PDESTINATION@PAGE = 2
+                      00560 endif
+                      00561 if((DEST_ADDR >= 0X0800) && (DEST_ADDR <= 0X1000))
+                      00562     PDESTINATION@PAGE = 1
+                      00563 endif
+                      00564 if((DEST_ADDR >= 0) && (DEST_ADDR <= 0X0800))
+                      00565     PDESTINATION@PAGE = 0
+                      00566 endif
+                      00567     endm
+                      00568 NUM_FSR macro pNumIn
+                      00569     num_byte pNumIn, FSR
+                      00570 if (((pNumIn >> 8) & 255) == 1)
+                      00571     bsf STATUS,7
+                      00572 else
+                      00573     bcf STATUS,7
+                      00574 endif
+                      00575     endm
+                      00576 label_word macro pLabelIn,pWordOut
+                      00577     movlw low (pLabelIn)
+                      00578     s@b pWordOut
+                      00579     movwf pWordOut
+                      00580     movlw high (pLabelIn)
+                      00581     s@b pWordOut
+                      00582     movwf pWordOut+1
+                      00583     r@b
+                      00584     endm
+  00000020            00587 GEN = 32
+  00000021            00588 GENH = 33
+  00000022            00589 GPR = 34
+  00000023            00590 PP0 = 35
+  00000024            00591 PP0H = 36
+  00000025            00592 PP1 = 37
+  00000026            00593 PP1H = 38
+  00000027            00594 PP2 = 39
+  00000028            00595 PP2H = 40
+  00000029            00596 SP#P9 = 41
+  0000002A            00597 speed = 42
+  0000002B            00598 _B#VR1 = 43
+  0000002C            00599 sony = 44
+  0000002D            00600 sonyH = 45
+                      00601 #define __SONYIN_PORT PORTC
+                      00602 #define FAN PORTC,1
+                      00603 #define L_1 PORTC,2
+                      00604 #define L_2 PORTC,3
+                      00605 #define L_3 PORTC,4
+                      00606 #define L_4 PORTC,5
+                      00607 #define L_5 PORTA,0
+                      00608 #define L_6 PORTA,1
+                      00609 #define L_7 PORTA,2
+                      00610 #define flag _B#VR1,0
+                      00611 #define cmd sony
+                      00612 #define __XTAL 20
+                      00613 #define __SONYIN_PIN 0
+0000                  00614 proton#code#start
+0000                  00615         org 0
+0000   28AA           00616         goto proton#main#start
+0001                  00617 T@LEB
+0001   01A4           00618         clrf 36
+0002                  00619 T@LEW
+0002   01A6           00620         clrf 38
+0003                  00621 T@LE
+0003   00A5           00622         movwf 37
+0004   3006           00623         movlw 6
+0005                  00624 T@ST
+0005   00A2           00625         movwf 34
+0006   0826           00626         movf 38,W
+0007   0224           00627         subwf 36,W
+0008   1D03           00628         skpz
+0009   280C           00629         goto $ + 3
+000A   0825           00630         movf 37,W
+000B   0223           00631         subwf 35,W
+000C   3004           00632         movlw 4
+000D   1803           00633         skpnc
+000E   3001           00634         movlw 1
+000F   1903           00635         skpnz
+0010   3002           00636         movlw 2
+0011   0522           00637         andwf 34,W
+0012   1D03           00638         skpz
+0013   3001           00639         movlw 1
+0014   28A6           00640         goto I@NT
+0015                  00641 P@INN
+0015   2056           00642         call C@PIN
+0016                  00643 P@IN
+0016   00A0           00644         movwf 32
+0017   1784           00645         bsf 4,7
+0018   0480           00646         iorwf 0,F
+0019   1384           00647         bcf 4,7
+001A   01A5           00648         clrf 37
+001B   1C23           00649         btfss 35,0
+001C   00A5           00650         movwf 37
+001D   2024           00651         call FL@ST
+001E   1903           00652         skpnz
+001F   28A6           00653         goto I@NT
+0020   2024           00654         call FL@ST
+0021   1903           00655         skpnz
+0022   28A6           00656         goto I@NT
+0023   2824           00657         goto FL@ST
+0024                  00658 FL@ST
+0024   0820           00659         movf 32,W
+0025   06A5           00660         xorwf 37,F
+0026   3001           00661         movlw 1
+0027   00A3           00662         movwf 35
+0028   01A4           00663         clrf 36
+0029   0800           00664         movf 0,W
+002A   0520           00665         andwf 32,W
+002B   0625           00666         xorwf 37,W
+002C   1D03           00667         skpz
+002D   0008           00668         return
+002E   0AA3           00669         incf 35,F
+002F   1903           00670         skpnz
+0030   0FA4           00671         incfsz 36,F
+0031   2829           00672         goto $ - 8
+0032   0008           00673         return
+0033                  00674 CL@R
+0033   0180           00675         clrf 0
+0034   0A84           00676         incf 4,F
+0035   3EFF           00677         addlw 255
+0036   1D03           00678         skpz
+0037   2833           00679         goto $ - 4
+0038   28A6           00680         goto I@NT
+0039                  00681 DL@MS
+0039   01A6           00682         clrf 38
+003A                  00683 DLY@W
+003A   00A5           00684         movwf 37
+003B                  00685 DLY@P
+003B   30FF           00686         movlw 255
+003C   07A5           00687         addwf 37,F
+003D   1C03           00688         skpc
+003E   07A6           00689         addwf 38,F
+003F   1C03           00690         skpc
+0040   28A6           00691         goto I@NT
+0041   3003           00692         movlw 3
+0042   00A4           00693         movwf 36
+0043   30E6           00694         movlw 230
+0044   2047           00695         call DLUS@W
+0045   283B           00696         goto DLY@P
+0046                  00697 DL@US
+0046   01A4           00698         clrf 36
+0047                  00699 DLUS@W
+0047   3EFC           00700         addlw 252
+0048   00A3           00701         movwf 35
+0049   09A4           00702         comf 36,F
+004A   1C03           00703         skpc
+004B   2852           00704         goto $ + 7
+004C   30FF           00705         movlw 255
+004D   0000           00706         nop
+004E   07A3           00707         addwf 35,F
+004F   1803           00708         skpnc
+0050   284D           00709         goto $ - 3
+0051   07A3           00710         addwf 35,F
+0052   0000           00711         nop
+0053   0FA4           00712         incfsz 36,F
+0054   284C           00713         goto $ - 8
+0055   0008           00714         return
+0056                  00715 C@PIN
+0056   0080           00716         movwf 0
+0057   3006           00717         movlw PORTB
+0058   1980           00718         btfsc 0,3
+0059   3005           00719         movlw PORTA
+005A   0084           00720         movwf 4
+005B                  00721 C@BT
+005B   3000           00722         movlw (C@TBL >> 8)
+005C   008A           00723         movwf 10
+005D   0800           00724         movf 0,W
+005E   3907           00725         andlw 7
+005F   0782           00726         addwf 2,F
+0060                  00727 C@TBL
+0060   3401           00728         retlw 1
+0061   3402           00729         retlw 2
+0062   3404           00730         retlw 4
+0063   3408           00731         retlw 8
+0064   3410           00732         retlw 16
+0065   3420           00733         retlw 32
+0066   3440           00734         retlw 64
+0067   3480           00735         retlw 128
+0068                  00736 SNY@IN
+0068   01A3           00737         clrf 35
+0069   3007           00738         movlw PORTC
+006A   1384           00739         bcf 4,7
+006B   0084           00740         movwf 4
+006C   3001           00741         movlw 1
+006D   2016           00742         call P@IN
+006E   3003           00743         movlw 3
+006F   0224           00744         subwf 36,W
+0070   1C03           00745         btfss 3,0
+0071   2882           00746         goto SNYIN@LL7
+0072   1D03           00747         btfss 3,2
+0073   2878           00748         goto SNYIN@LB2
+0074   30E8           00749         movlw 232
+0075   0223           00750         subwf 35,W
+0076   1C03           00751         btfss 3,0
+0077   2882           00752         goto SNYIN@LL7
+0078                  00753 SNYIN@LB2
+0078   3005           00754         movlw 5
+0079   0224           00755         subwf 36,W
+007A   1C03           00756         btfss 3,0
+007B   2887           00757         goto SNYIN@LL6
+007C   1D03           00758         btfss 3,2
+007D   2882           00759         goto SNYIN@LL7
+007E   3046           00760         movlw 70
+007F   0223           00761         subwf 35,W
+0080   1C03           00762         btfss 3,0
+0081   2887           00763         goto SNYIN@LL6
+0082                  00764 SNYIN@LL7
+0082   30FF           00765         movlw 255
+0083   00A4           00766         movwf 36
+0084   00A3           00767         movwf 35
+0085   1403           00768         bsf 3,0
+0086   28A6           00769         goto I@NT
+0087                  00770 SNYIN@LL6
+0087   300B           00771         movlw 11
+0088   00A2           00772         movwf 34
+0089                  00773 SNYIN@RPT
+0089   11A8           00774         bcf 40,3
+008A   01A3           00775         clrf 35
+008B   3001           00776         movlw 1
+008C   2016           00777         call P@IN
+008D   3001           00778         movlw 1
+008E   0224           00779         subwf 36,W
+008F   1C03           00780         btfss 3,0
+0090   2897           00781         goto SNYIN@CLRB
+0091   1D03           00782         btfss 3,2
+0092   2896           00783         goto SNYIN@LB4
+0093   30C2           00784         movlw 194
+0094   0223           00785         subwf 35,W
+0095   1803           00786         btfsc 3,0
+0096                  00787 SNYIN@LB4
+0096   15A8           00788         bsf 40,3
+0097                  00789 SNYIN@CLRB
+0097   1003           00790         bcf 3,0
+0098   0CA8           00791         rrf 40,F
+0099   0CA7           00792         rrf 39,F
+009A   0BA2           00793         decfsz 34,F
+009B   2889           00794         goto SNYIN@RPT
+009C   307F           00795         movlw 127
+009D   0527           00796         andwf 39,W
+009E   00A3           00797         movwf 35
+009F   1003           00798         bcf 3,0
+00A0   0DA7           00799         rlf 39,F
+00A1   0D28           00800         rlf 40,W
+00A2   391F           00801         andlw 31
+00A3   00A4           00802         movwf 36
+00A4   0823           00803         movf 35,W
+00A5   1003           00804         bcf 3,0
+00A6                  00805 I@NT
+00A6   1383           00806         bcf 3,7
+00A7                  00807 I@NT2
+00A7   1283           00808         bcf 3,5
+00A8   1303           00809         bcf 3,6
+00A9   0008           00810         return
+00AA                  00811 proton#main#start
+00AA   0183           00812         clrf 3
+
+  000000AB            00815 F2_SOF equ $ ; IR_HOME.PRP
+  000000AB            00816 F2_EOF equ $ ; IR_HOME.PRP
+  000000AB            00817 F1_SOF equ $ ; IR_HOME.BAS
+  000000AB            00818 F1_000012 equ $ ; IN [IR_HOME.BAS] ANSEL = 0
+00AB   1683           00819         bsf STATUS,5
+  00000001            00820 ram_bank = 1
+00AC   0191           00821         clrf ANSEL
+  000000AD            00822 F1_000023 equ $ ; IN [IR_HOME.BAS] OUTPUT FAN : OUTPUT L_1
+00AD   1087           00823         bcf TRISC,1
+00AE   1107           00824         bcf TRISC,2
+  000000AF            00825 F1_000024 equ $ ; IN [IR_HOME.BAS] OUTPUT L_2 : OUTPUT L_3
+00AF   1187           00826         bcf TRISC,3
+00B0   1207           00827         bcf TRISC,4
+  000000B1            00828 F1_000025 equ $ ; IN [IR_HOME.BAS] OUTPUT L_4 : OUTPUT L_5
+00B1   1287           00829         bcf TRISC,5
+00B2   1005           00830         bcf TRISA,0
+  000000B3            00831 F1_000026 equ $ ; IN [IR_HOME.BAS] OUTPUT L_6 : OUTPUT L_7
+00B3   1085           00832         bcf TRISA,1
+00B4   1105           00833         bcf TRISA,2
+  000000B5            00834 F1_000027 equ $ ; IN [IR_HOME.BAS] PORTC = 0 : PORTA = 0
+00B5   1283           00835         bcf STATUS,5
+  00000000            00836 ram_bank = 0
+00B6   0187           00837         clrf PORTC
+00B7   0185           00838         clrf PORTA
+  000000B8            00839 F1_000033 equ $ ; IN [IR_HOME.BAS] CLEAR
+00B8   3020           00840         movlw 32
+00B9   0084           00841         movwf FSR
+00BA   3040           00842         movlw 64
+00BB   2033           00843         call CL@R
+00BC                  00844 main
+  000000BC            00845 F1_000036 equ $ ; IN [IR_HOME.BAS] REPEAT
+00BC                  00846 BC@LL1
+  000000BC            00847 F1_000037 equ $ ; IN [IR_HOME.BAS] sony = SONYIN
+00BC   2068           00848         call SNY@IN
+00BD   00AC           00849         movwf sony
+00BE   0824           00850         movf PP0H,W
+00BF   00AD           00851         movwf sonyH
+  000000C0            00852 F1_000038 equ $ ; IN [IR_HOME.BAS] GOSUB fan_speed
+00C0   2103           00853         call fan_speed
+00C1                  00854 BC@LL3
+  000000C1            00855 F1_000039 equ $ ; IN [IR_HOME.BAS] UNTIL cmd <> 255
+00C1   0A2C           00856         incf sony,W
+00C2   1903           00857         btfsc STATUS,2
+00C3   28BC           00858         goto BC@LL1
+00C4                  00859 BC@LL2
+  000000C4            00860 F1_000041 equ $ ; IN [IR_HOME.BAS] if cmd >= 0 AND cmd <= 8 THEN
+00C4   3000           00861         movlw 0
+00C5   022C           00862         subwf sony,W
+00C6   3000           00863         movlw 0
+00C7   1803           00864         btfsc STATUS,0
+00C8   3001           00865         movlw 1
+00C9   00A9           00866         movwf SP#P9
+00CA   082C           00867         movf sony,W
+00CB   00A3           00868         movwf PP0
+00CC   3008           00869         movlw 8
+00CD   2001           00870         call T@LEB
+00CE   05A9           00871         andwf SP#P9,F
+00CF   1903           00872         btfsc STATUS,2
+00D0   28D5           00873         goto BC@LL5
+  000000D1            00874 F1_000042 equ $ ; IN [IR_HOME.BAS] speed = cmd + 2
+00D1   3002           00875         movlw 2
+00D2   072C           00876         addwf sony,W
+00D3   00AA           00877         movwf speed
+  000000D4            00878 F1_000043 equ $ ; IN [IR_HOME.BAS] flag = 1
+00D4   142B           00879         bsf _B#VR1,0
+  000000D5            00880 F1_000044 equ $ ; IN [IR_HOME.BAS] endif
+00D5                  00881 BC@LL5
+  000000D5            00882 F1_000045 equ $ ; IN [IR_HOME.BAS] if cmd = 21 THEN flag = 0
+00D5   3015           00883         movlw 21
+00D6   022C           00884         subwf sony,W
+00D7   1D03           00885         btfss STATUS,2
+00D8   28DA           00886         goto BC@LL7
+00D9   102B           00887         bcf _B#VR1,0
+00DA                  00888 BC@LL7
+  000000DA            00889 F1_000046 equ $ ; IN [IR_HOME.BAS] if cmd = 16 THEN L_1 = ~L_1 : DELAYMS 500
+00DA   3010           00890         movlw 16
+00DB   022C           00891         subwf sony,W
+00DC   1D03           00892         btfss STATUS,2
+00DD   28E4           00893         goto BC@LL9
+00DE   3004           00894         movlw 4
+00DF   0687           00895         xorwf PORTC,F
+00E0   3001           00896         movlw 1
+00E1   00A6           00897         movwf PP1H
+00E2   30F4           00898         movlw 244
+00E3   203A           00899         call DLY@W
+00E4                  00900 BC@LL9
+  000000E4            00901 F1_000047 equ $ ; IN [IR_HOME.BAS] if cmd = 17 THEN L_2 = ~L_2 : DELAYMS 500
+00E4   3011           00902         movlw 17
+00E5   022C           00903         subwf sony,W
+00E6   1D03           00904         btfss STATUS,2
+00E7   28EE           00905         goto BC@LL11
+00E8   3008           00906         movlw 8
+00E9   0687           00907         xorwf PORTC,F
+00EA   3001           00908         movlw 1
+00EB   00A6           00909         movwf PP1H
+00EC   30F4           00910         movlw 244
+00ED   203A           00911         call DLY@W
+00EE                  00912 BC@LL11
+  000000EE            00913 F1_000048 equ $ ; IN [IR_HOME.BAS] if cmd = 18 THEN L_3 = ~L_3 : DELAYMS 500
+00EE   3012           00914         movlw 18
+00EF   022C           00915         subwf sony,W
+00F0   1D03           00916         btfss STATUS,2
+00F1   28F8           00917         goto BC@LL13
+00F2   3010           00918         movlw 16
+00F3   0687           00919         xorwf PORTC,F
+00F4   3001           00920         movlw 1
+00F5   00A6           00921         movwf PP1H
+00F6   30F4           00922         movlw 244
+00F7   203A           00923         call DLY@W
+00F8                  00924 BC@LL13
+  000000F8            00925 F1_000049 equ $ ; IN [IR_HOME.BAS] if cmd = 19 THEN L_4 = ~L_4 : DELAYMS 500
+00F8   3013           00926         movlw 19
+00F9   022C           00927         subwf sony,W
+00FA   1D03           00928         btfss STATUS,2
+00FB   2902           00929         goto BC@LL15
+00FC   3020           00930         movlw 32
+00FD   0687           00931         xorwf PORTC,F
+00FE   3001           00932         movlw 1
+00FF   00A6           00933         movwf PP1H
+0100   30F4           00934         movlw 244
+0101   203A           00935         call DLY@W
+0102                  00936 BC@LL15
+  00000102            00937 F1_000050 equ $ ; IN [IR_HOME.BAS] goto main
+0102   28BC           00938         goto main
+0103                  00939 fan_speed
+  00000103            00940 F1_000053 equ $ ; IN [IR_HOME.BAS] if flag = 1 THEN
+0103   1C2B           00941         btfss _B#VR1,0
+0104   2910           00942         goto BC@LL17
+  00000105            00943 F1_000054 equ $ ; IN [IR_HOME.BAS] FAN = 0
+0105   1087           00944         bcf PORTC,1
+  00000106            00945 F1_000055 equ $ ; IN [IR_HOME.BAS] DELAYMS 10 - speed
+0106   082A           00946         movf speed,W
+0107   3C0A           00947         sublw 10
+0108   00A5           00948         movwf PP1
+0109   3000           00949         movlw 0
+010A   1C03           00950         btfss STATUS,0
+010B   3EFF           00951         addlw 255
+010C   00A6           00952         movwf PP1H
+010D   203B           00953         call DLY@P
+  0000010E            00954 F1_000056 equ $ ; IN [IR_HOME.BAS] FAN = 1
+010E   1487           00955         bsf PORTC,1
+010F   2911           00956         goto BC@LL18
+0110                  00957 BC@LL17
+  00000110            00958 F1_000057 equ $ ; IN [IR_HOME.BAS] else
+  00000110            00959 F1_000058 equ $ ; IN [IR_HOME.BAS] FAN = 0
+0110   1087           00960         bcf PORTC,1
+  00000111            00961 F1_000059 equ $ ; IN [IR_HOME.BAS] endif
+0111                  00962 BC@LL18
+  00000111            00963 F1_000060 equ $ ; IN [IR_HOME.BAS] return
+0111   0008           00964         return
+  00000112            00965 F1_EOF equ $ ; IR_HOME.BAS
+0112                  00966 PB@LB20
+0112   2912           00967         goto PB@LB20
+0113                  00969 __EOF
+2007   0000           00970 __config FOSC_HS&WDTE_OFF&PWRTE_OFF&MCLRE_ON&BOREN_OFF&CP_ON&CPD_ON
+                      00971         end
+MPASM  5.42                               A.S   6-28-2017  9:30:07         PAGE  2
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+ADCON0                            0000001F
+ADCON1                            0000009F
+ADCS0                             00000004
+ADCS1                             00000005
+ADCS2                             00000006
+ADFM                              00000007
+ADIE                              00000006
+ADIF                              00000006
+ADON                              00000000
+ADRESH                            0000001E
+ADRESL                            0000009E
+ADRESLH                           0000001E
+ANS0                              00000000
+ANS1                              00000001
+ANS2                              00000002
+ANS3                              00000003
+ANS4                              00000004
+ANS5                              00000005
+ANS6                              00000006
+ANS7                              00000007
+ANSEL                             00000091
+BANK0_END                         0X5F
+BANK0_START                       0X20
+BC@LL1                            000000BC
+BC@LL11                           000000EE
+BC@LL13                           000000F8
+BC@LL15                           00000102
+BC@LL17                           00000110
+BC@LL18                           00000111
+BC@LL2                            000000C4
+BC@LL3                            000000C1
+BC@LL5                            000000D5
+BC@LL7                            000000DA
+BC@LL9                            000000E4
+BIT_BIT                           
+BIT_BYTE                          
+BIT_DWORD                         
+BIT_WORD                          
+BIT_WREG                          
+BODEN                             00003FFF
+BODEN_OFF                         00003FBF
+BOREN_OFF                         00000000
+BOREN_ON                          00000040
+BYTE_BIT                          
+BYTE_BYTE                         
+BYTE_DWORD                        
+BYTE_WORD                         
+BYTE_WREG                         
+C                                 00000000
+C@BT                              0000005B
+C@PIN                             00000056
+C@TBL                             00000060
+CAL0                              00000002
+CAL1                              00000003
+CAL2                              00000004
+CAL3                              00000005
+CAL4                              00000006
+CAL5                              00000007
+CHS0                              00000002
+CHS1                              00000003
+CHS2                              00000004
+CINV                              00000004
+CIS                               00000003
+CL@R                              00000033
+CM0                               00000000
+CM1                               00000001
+CM2                               00000002
+CMCON                             00000019
+CMD                               sony
+CMIE                              00000003
+CMIF                              00000003
+CONFIG_REQ                        1
+COUT                              00000006
+CPD_OFF                           00003FFF
+CPD_ON                            00003EFF
+CP_OFF                            00003FFF
+CP_ON                             00003F7F
+CURRENT@PAGE                      00000000
+DC                                00000001
+DEST@PAGE                         00000000
+DL@MS                             00000039
+DL@US                             00000046
+DLUS@W                            00000047
+DLY@P                             0000003B
+DLY@W                             0000003A
+DWORD_BIT                         
+DWORD_BYTE                        
+DWORD_DWORD                       
+DWORD_WORD                        
+DWORD_WREG                        
+EC_OSC                            00003FFB
+EEADR                             0000009B
+EECON1                            0000009C
+EECON2                            0000009D
+EEDAT                             0000009A
+EEDATA                            0000009A
+EEDATL                            0000009A
+EEIE                              00000007
+EEIF                              00000007
+EXTRC_OSC_CLKOUT                  00003FFF
+EXTRC_OSC_NOCLKOUT                00003FFE
+F1_000012                         000000AB
+F1_000023                         000000AD
+F1_000024                         000000AF
+F1_000025                         000000B1
+F1_000026                         000000B3
+F1_000027                         000000B5
+F1_000033                         000000B8
+F1_000036                         000000BC
+F1_000037                         000000BC
+F1_000038                         000000C0
+F1_000039                         000000C1
+F1_000041                         000000C4
+F1_000042                         000000D1
+F1_000043                         000000D4
+F1_000044                         000000D5
+F1_000045                         000000D5
+F1_000046                         000000DA
+F1_000047                         000000E4
+F1_000048                         000000EE
+F1_000049                         000000F8
+F1_000050                         00000102
+F1_000053                         00000103
+F1_000054                         00000105
+F1_000055                         00000106
+F1_000056                         0000010E
+F1_000057                         00000110
+F1_000058                         00000110
+F1_000059                         00000111
+F1_000060                         00000111
+F1_EOF                            00000112
+F1_SOF                            000000AB
+F2_EOF                            000000AB
+F2_SOF                            000000AB
+F@CALL                            
+F@JUMP                            
+FAN                               PORTC,1
+FAN_SPEED                         00000103
+FIND@PAGE                         
+FL@ST                             00000024
+FLAG                              _B#VR1,0
+FOSC_EC                           00000003
+FOSC_EXTRCCLK                     00000007
+FOSC_EXTRCIO                      00000006
+FOSC_HS                           00000002
+FOSC_INTRCCLK                     00000005
+FOSC_INTRCIO                      00000004
+FOSC_LP                           00000000
+FOSC_XT                           00000001
+FSR                               00000004
+GEN                               00000020
+GENH                              00000021
+GIE                               00000007
+GO                                00000001
+GO_DONE                           00000001
+GPR                               00000022
+HS_OSC                            00003FFA
+I@NT                              000000A6
+I@NT2                             000000A7
+INDF                              00000000
+INTCON                            0000000B
+INTE                              00000004
+INTEDG                            00000006
+INTF                              00000001
+INTRC_OSC_CLKOUT                  00003FFD
+INTRC_OSC_NOCLKOUT                00003FFC
+IOC                               00000096
+IOCA                              00000096
+IRP                               00000007
+JUMP                              
+LABEL_WORD                        
+LCD#TYPE                          0
+LP_OSC                            00003FF8
+L_1                               PORTC,2
+L_2                               PORTC,3
+L_3                               PORTC,4
+L_4                               PORTC,5
+L_5                               PORTA,0
+L_6                               PORTA,1
+L_7                               PORTA,2
+MAIN                              000000BC
+MCLRE_OFF                         00003FDF
+MCLRE_ON                          00003FFF
+NOT_BOD                           00000000
+NOT_DONE                          00000001
+NOT_GPPU                          00000007
+NOT_PD                            00000003
+NOT_POR                           00000001
+NOT_RAPU                          00000007
+NOT_T1SYNC                        00000002
+NOT_TO                            00000004
+NUM_BIT                           
+NUM_BYTE                          
+NUM_DWORD                         
+NUM_FSR                           
+NUM_WORD                          
+NUM_WREG                          
+OPTION_REG                        00000081
+OSCCAL                            00000090
+P@IN                              00000016
+P@INN                             00000015
+PB@LB20                           00000112
+PCL                               00000002
+PCLATH                            0000000A
+PCON                              0000008E
+PDESTINATION@PAGE                 00000000
+PEIE                              00000006
+PIE1                              0000008C
+PIR1                              0000000C
+PORTA                             00000005
+PORTB                             00000006
+PORTC                             00000007
+PP0                               00000023
+PP0H                              00000024
+PP1                               00000025
+PP1H                              00000026
+PP2                               00000027
+PP2H                              00000028
+PP_GO_DONE                        00000001
+PP_RD                             00000000
+PP_WR                             00000001
+PP_WREN                           00000002
+PP_WRERR                          00000003
+PROTON#CODE#START                 00000000
+PROTON#MAIN#START                 000000AA
+PS0                               00000000
+PS1                               00000001
+PS2                               00000002
+PSA                               00000003
+PWRTE_OFF                         00003FFF
+PWRTE_ON                          00003FEF
+R@B                               
+RAIE                              00000003
+RAIF                              00000000
+RAM_BANK                          00000000
+RAM_BANKS                         1
+RD                                00000000
+RP0                               00000005
+RP1                               00000006
+S@B                               
+SET@PAGE                          
+SNY@IN                            00000068
+SNYIN@CLRB                        00000097
+SNYIN@LB2                         00000078
+SNYIN@LB4                         00000096
+SNYIN@LL6                         00000087
+SNYIN@LL7                         00000082
+SNYIN@RPT                         00000089
+SONY                              0000002C
+SONYH                             0000002D
+SP#P9                             00000029
+SPEED                             0000002A
+STATUS                            00000003
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+T0SE                              00000004
+T1CKPS0                           00000004
+T1CKPS1                           00000005
+T1CON                             00000010
+T1IE                              00000000
+T1IF                              00000000
+T1OSCEN                           00000003
+T@LE                              00000003
+T@LEB                             00000001
+T@LEW                             00000002
+T@ST                              00000005
+TMR0                              00000001
+TMR1CS                            00000001
+TMR1GE                            00000006
+TMR1H                             0000000F
+TMR1IE                            00000000
+TMR1IF                            00000000
+TMR1L                             0000000E
+TMR1LH                            0000000F
+TMR1ON                            00000000
+TRISA                             00000085
+TRISB                             00000086
+TRISC                             00000087
+VCFG                              00000006
+VR0                               00000000
+VR1                               00000001
+VR2                               00000002
+VR3                               00000003
+VRCON                             00000099
+VREN                              00000007
+VRR                               00000005
+WDTE_OFF                          00000000
+WDTE_ON                           00000008
+WDT_OFF                           00003FF7
+WDT_ON                            00003FFF
+WORD_BIT                          
+WORD_BYTE                         
+WORD_DWORD                        
+WORD_WORD                         
+WORD_WREG                         
+WPU                               00000095
+WPUA                              00000095
+WR                                00000001
+WREG_BIT                          
+WREG_BYTE                         
+WREG_DWORD                        
+WREG_WORD                         
+WREN                              00000002
+WRERR                             00000003
+XTAL                              20
+XT_OSC                            00003FF9
+Z                                 00000002
+_ADC                              8
+_ADC_RES                          10
+_B#VR1                            0000002B
+_BANKS                            2
+_CORE                             14
+_CWRITE_BLOCK                     0
+_EEPROM                           128
+_FLASH                            0
+_MAXMEM                           1024
+_MAXRAM                           64
+_PAGES                            1
+_RAM_END                          0X0040
+_SYSTEM_VARIABLE_COUNT            10
+_USART                            0
+_USB                              0
+__16F676                          1
+__EOF                             00000113
+__SONYIN_PIN                      0
+__SONYIN_PORT                     PORTC
+__XTAL                            20
+
+
+MEMORY USAGE MAP ('X' = USED,  '-' = UNUSED)
+
+0000 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0040 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0080 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+00C0 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX
+0100 : XXXXXXXXXXXXXXXX XXX------------- ---------------- ----------------
+2000 : -------X-------- ---------------- ---------------- ----------------
+
+ALL OTHER MEMORY BLOCKS UNUSED.
+
+PROGRAM MEMORY WORDS USED:   275
+PROGRAM MEMORY WORDS FREE:   749
+
+
+ERRORS   :     0
+WARNINGS :     0 REPORTED,    11 SUPPRESSED
+MESSAGES :     1 REPORTED,    10 SUPPRESSED
+
+

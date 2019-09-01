@@ -1,0 +1,14 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F72 -DL -O11111114 -fo8 -N"D:\1. Electronics\Antor's corner\Raktim Sir\Old\FAN speed control\firmware\FSC001.mcppi" -SP"C:\Program Files (x86)\mikroC PRO for PIC\Defs\" -SP"C:\Program Files (x86)\mikroC PRO for PIC\Uses\P16\" -SP"D:\1. Electronics\Antor's corner\Raktim Sir\Old\FAN speed control\firmware\" -SP"C:\Program Files\mikroC PRO for PIC\Defs\" -SP"C:\Program Files\mikroC PRO for PIC\Uses\P16\" -SP"E:\Electronics\Abrar's corner\Raktim Sir\FAN speed control\firmware\" "FSC001.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_CString.mcl" "__Lib_CStdlib.mcl" "__Lib_CMath.mcl" "__Lib_MemManager.mcl" "__Lib_Conversions.mcl" "__Lib_Sprinti.mcl" "__Lib_Sprintl.mcl" "__Lib_Time.mcl" "__Lib_Trigonometry.mcl" "__Lib_Button.mcl" "__Lib_Keypad4x4.mcl" "__Lib_Manchester.mcl" "__Lib_OneWire.mcl" "__Lib_PS2.mcl" "__Lib_Sound.mcl" "__Lib_SoftI2C.mcl" "__Lib_SoftSPI.mcl" "__Lib_SoftUART.mcl" "__Lib_ADC_A_A.mcl" "__Lib_PWM_c2.mcl" "__Lib_SPI_c345.mcl" "__Lib_PortExpander.mcl" "__Lib_CANSPI.mcl" "__Lib_CF.mcl" "__Lib_GlcdFonts.mcl" "__Lib_Glcd.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl" "__Lib_S1D13700.mcl" "__Lib_T6963C.mcl" "__Lib_SPIGlcd.mcl" "__Lib_SPILcd.mcl" "__Lib_SPILcd8.mcl" "__Lib_SPIT6963C.mcl" "__Lib_TouchPanel.mcl"	 
+warning: 0	1501	Specified search path does not exist: 'C:\Program Files\mikroC PRO for PIC\Defs'	 
+warning: 0	1501	Specified search path does not exist: 'C:\Program Files\mikroC PRO for PIC\Uses\P16'	 
+warning: 0	1501	Specified search path does not exist: 'E:\Electronics\Abrar's corner\Raktim Sir\FAN speed control\firmware'	 
+hint: 0	1139	Available RAM: 144 [bytes], Available ROM: 2048 [bytes]	 
+diagnostics: 0	122	Compilation Started	FSC001.c
+diagnostics: 70	123	Compiled Successfully	FSC001.c
+diagnostics: 0	127	All files Compiled in 31 ms	 
+hint: 0	1144	Used RAM (bytes): 9 (6%)  Free RAM (bytes): 135 (94%)	Used RAM (bytes): 9 (6%)  Free RAM (bytes): 135 (94%)
+hint: 0	1144	Used ROM (program words): 125 (6%)  Free ROM (program words): 1923 (94%)	Used ROM (program words): 125 (6%)  Free ROM (program words): 1923 (94%)
+diagnostics: 0	125	Project Linked Successfully	FSC001.mcppi
+diagnostics: 0	128	Linked in 47 ms	 
+diagnostics: 0	129	Project 'FSC001.mcppi' completed: 125 ms	 
+diagnostics: 0	103	Finished successfully: 29 Jan 2017, 10:51:01	FSC001.mcppi

@@ -1,0 +1,19 @@
+[Project]
+Filename=C:\Users\antor\Google Drive\Embedded Projects\Tanvir Bhai\Projects\31. Fire fighting robot\car firmware\fire car.bas
+[Environment]
+CaretX=1
+CaretY=13
+[Version]
+Enable=1
+Rollover=255
+Major=0
+Minor=0
+Release=0
+Build=105
+[Results]
+Visible=1
+Height=117
+View=1
+[Status]
+Message=Success : 617 program words used, 16 variable bytes used
+Image=2

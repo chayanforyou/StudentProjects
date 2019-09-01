@@ -1,0 +1,13 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F876A -DL -O11111114 -fo20 -N"C:\Users\antor\Google Drive\Embedded Projects\Tanvir Bhai\Projects\41. LED Matrix\project sim\simu.mcppi" -SP"C:\Program Files (x86)\mikroC PRO for PIC\Defs\" -SP"C:\Program Files (x86)\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\antor\Google Drive\Embedded Projects\Tanvir Bhai\Projects\41. LED Matrix\project sim\" -IP"C:\Users\antor\Google Drive\Embedded Projects\Tanvir Bhai\Projects\41. LED Matrix\project sim\" "simu.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_CString.mcl" "__Lib_CStdlib.mcl" "__Lib_EEPROM.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	font.h
+diagnostics: 97	123	Compiled Successfully	simu.c
+hint: 19	1164	Variable 'temp' has been eliminated by optimizer	simu.c
+hint: 20	1164	Variable 'dta' has been eliminated by optimizer	simu.c
+diagnostics: 0	127	All files Compiled in 63 ms	 
+hint: 0	1144	Used RAM (bytes): 65 (18%)  Free RAM (bytes): 287 (82%)	Used RAM (bytes): 65 (18%)  Free RAM (bytes): 287 (82%)
+hint: 0	1144	Used ROM (program words): 1585 (19%)  Free ROM (program words): 6607 (81%)	Used ROM (program words): 1585 (19%)  Free ROM (program words): 6607 (81%)
+diagnostics: 0	125	Project Linked Successfully	simu.mcppi
+diagnostics: 0	128	Linked in 47 ms	 
+diagnostics: 0	129	Project 'simu.mcppi' completed: 125 ms	 
+diagnostics: 0	103	Finished successfully: 15 Nov 2017, 07:29:36	simu.mcppi

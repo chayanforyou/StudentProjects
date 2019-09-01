@@ -1,0 +1,73 @@
+[DEVICE]
+Name=P16F676
+Clock=8000000
+[MEMORY_MODEL]
+Value=0
+[BUILD_TYPE]
+Value=0
+[ACTIVE_TAB]
+Value=second counter.c
+[USE_EEPROM]
+Value=0
+[USE_HEAP]
+Value=0
+[HEAP_SIZE]
+Value=0
+[EEPROM_DEFINITION]
+Value=
+[FILES]
+Count=1
+File0=second counter.c
+[BINARIES]
+Count=0
+[IMAGES]
+Count=0
+ActiveImageIndex=-1
+[OPENED_FILES]
+Count=0
+[EEPROM]
+Count=0
+[ACTIVE_COMMENTS_FILES]
+Count=0
+[OTHER_FILES]
+Count=0
+[SEARCH_PATH]
+Count=4
+Path0=C:\Program Files (x86)\mikroC PRO for PIC\Defs\
+Path1=C:\Program Files (x86)\mikroC PRO for PIC\Uses\P16\
+Path2=C:\Users\antor\Google Drive\Embedded Projects\STechBD\Projects\Second Counter\Firmware\
+Path3=C:\Program Files (x86)\mikroC PRO for PIC\Packages\DS1302 Library\Uses\
+[HEADER_PATH]
+Count=0
+[HEADERS]
+Count=0
+[PLDS]
+Count=0
+[Useses]
+Count=23
+File0=ADC
+File1=Button
+File2=Conversions
+File3=C_Math
+File4=C_Stdlib
+File5=C_String
+File6=C_Type
+File7=DS1302
+File8=EEPROM
+File9=Lcd
+File10=Lcd_Constants
+File11=Manchester
+File12=MemManager
+File13=One_Wire
+File14=PS2
+File15=Software_I2C
+File16=Software_SPI
+File17=Software_UART
+File18=Sound
+File19=Sprinti
+File20=Sprintl
+File21=Time
+File22=Trigonometry
+[EXPANDED_NODES]
+Node0=Sources
+Count=1

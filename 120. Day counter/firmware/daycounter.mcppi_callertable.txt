@@ -1,0 +1,11 @@
+main
+	__CC2DW
+		____DoICP
+	InitTimer1
+	show_all_digit
+		convert2digit
+			Div_8X8_U
+	time_set
+		convert2digit
+			Div_8X8_U
+Interrupt

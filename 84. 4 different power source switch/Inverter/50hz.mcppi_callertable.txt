@@ -1,0 +1,3 @@
+main
+	InitTimer1
+Interrupt

@@ -1,0 +1,81 @@
+﻿Build started 25-Aug-16 12:17:35 AM.
+     1>Project "D:\1. Electronics\Abrar's corner\Tanvir Bhai\Projects\Fingerprint Voting Machine\Sunrom-3935\SDK\PC APP Source\SYDemo_V2.0\GDDemo.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug\GDDemo.pch" /Fo".\Debug\\" /Fd".\Debug\vc110.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\GDDemo.pch" /Fo".\Debug\\" /Fd".\Debug\vc110.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt Com.cpp DBManager.cpp DlgFingerDB.cpp DLGUSERDEFINE.cpp FingerFileTable.cpp GDDemo.cpp GDDemoDlg.cpp NoteDlg.cpp PathDialog.cpp RNoteDlg.cpp SortHeaderCtrl.cpp SortListCtrl.cpp User.cpp
+         User.cpp
+         SortListCtrl.cpp
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\sortlistctrl.cpp(341): warning C4244: 'initializing' : conversion from 'ULONGLONG' to 'DWORD', possible loss of data
+         SortHeaderCtrl.cpp
+         RNoteDlg.cpp
+         PathDialog.cpp
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\pathdialog.h(48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         NoteDlg.cpp
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\notedlg.cpp(64): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\notedlg.cpp(93): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : see declaration of 'strtok'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\notedlg.cpp(96): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\notedlg.cpp(112): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\notedlg.cpp(124): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : see declaration of 'strtok'
+         GDDemoDlg.cpp
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\gddemodlg.cpp(1454): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\gddemodlg.cpp(2108): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : see declaration of 'strtok'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\gddemodlg.cpp(2112): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\gddemodlg.cpp(2114): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : see declaration of 'strtok'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\gddemodlg.cpp(2123): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\gddemodlg.cpp(2161): warning C4101: 'UserContent' : unreferenced local variable
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\gddemodlg.cpp(2375): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\gddemodlg.cpp(2615): warning C4996: '_splitpath': This function or variable may be unsafe. Consider using _splitpath_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdlib.h(824) : see declaration of '_splitpath'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\gddemodlg.cpp(2616): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\gddemodlg.cpp(2617): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\gddemodlg.cpp(2618): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\gddemodlg.cpp(2619): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\gddemodlg.cpp(2620): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+         GDDemo.cpp
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\gddemo.cpp(54): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\atlmfc\include\afxwin.h(5361) : see declaration of 'CWinApp::Enable3dControls'
+         FingerFileTable.cpp
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\fingerfiletable.cpp(13): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\fingerfiletable.cpp(130): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdlib.h(909) : see declaration of 'itoa'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\fingerfiletable.cpp(240): warning C4996: '_splitpath': This function or variable may be unsafe. Consider using _splitpath_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdlib.h(824) : see declaration of '_splitpath'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\fingerfiletable.cpp(241): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : see declaration of 'strcat'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\fingerfiletable.cpp(242): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\fingerfiletable.cpp(263): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdlib.h(909) : see declaration of 'itoa'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\fingerfiletable.cpp(294): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdlib.h(909) : see declaration of 'itoa'
+         DLGUSERDEFINE.cpp
+         DlgFingerDB.cpp
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\pathdialog.h(48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\sydemo_v2.0\dlgfingerdb.cpp(24): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         DBManager.cpp
+         Com.cpp
+         Generating Code...
+     1>Done Building Project "D:\1. Electronics\Abrar's corner\Tanvir Bhai\Projects\Fingerprint Voting Machine\Sunrom-3935\SDK\PC APP Source\SYDemo_V2.0\GDDemo.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.73

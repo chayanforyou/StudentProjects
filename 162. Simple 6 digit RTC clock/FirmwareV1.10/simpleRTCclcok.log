@@ -1,0 +1,19 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F72 -L -DL -O11111114 -fo20 -N"C:\Users\antor\Google Drive\Embedded Projects\STechBD\Projects\Simple 6 digit RTC clock\FirmwareV1.10\simpleRTCclcok.mcppi" -SP"C:\Program Files (x86)\mikroC PRO for PIC\Defs\" -SP"C:\Program Files (x86)\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\antor\Google Drive\Embedded Projects\STechBD\Projects\Simple 6 digit RTC clock\FirmwareV1.10\" -SP"D:\1. Electronics\Abrar's corner\Tutorials\Simple 4 digit RTC clock\FirmwareV1.10\" -IP"D:\1. Electronics\Abrar's corner\Tutorials\Simple 4 digit RTC clock\FirmwareV1.10\" -IP"C:\Users\antor\Google Drive\Embedded Projects\STechBD\Projects\Simple 6 digit RTC clock\FirmwareV1.10\" "simpleRTCclcok.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_CString.mcl" "__Lib_CStdlib.mcl" "__Lib_CMath.mcl" "__Lib_MemManager.mcl" "__Lib_Conversions.mcl" "__Lib_Sprinti.mcl" "__Lib_Sprintl.mcl" "__Lib_Time.mcl" "__Lib_Trigonometry.mcl" "__Lib_Button.mcl" "__Lib_Keypad4x4.mcl" "__Lib_Manchester.mcl" "__Lib_OneWire.mcl" "__Lib_PS2.mcl" "__Lib_Sound.mcl" "__Lib_SoftI2C.mcl" "__Lib_SoftSPI.mcl" "__Lib_SoftUART.mcl" "__Lib_ADC_A_A.mcl" "__Lib_PWM_c2.mcl" "__Lib_SPI_c345.mcl" "__Lib_PortExpander.mcl" "__Lib_CANSPI.mcl" "__Lib_CF.mcl" "__Lib_GlcdFonts.mcl" "__Lib_Glcd.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl" "__Lib_S1D13700.mcl" "__Lib_T6963C.mcl" "__Lib_SPIGlcd.mcl" "__Lib_SPILcd.mcl" "__Lib_SPILcd8.mcl" "__Lib_SPIT6963C.mcl" "__Lib_TouchPanel.mcl"	 
+warning: 0	1501	Specified search path does not exist: 'D:\1. Electronics\Abrar's corner\Tutorials\Simple 4 digit RTC clock\FirmwareV1.10'	 
+warning: 0	1502	Specified include path does not exist: 'D:\1. Electronics\Abrar's corner\Tutorials\Simple 4 digit RTC clock\FirmwareV1.10'	 
+hint: 0	1139	Available RAM: 144 [bytes], Available ROM: 2048 [bytes]	 
+diagnostics: 0	122	Compilation Started	simpleRTCclcok.c
+error: 8	324	Undeclared identifier 'I2C_Start' in expression	ds1307.h
+error: 9	324	Undeclared identifier 'I2C_Write' in expression	ds1307.h
+error: 10	324	Undeclared identifier 'I2C_Write' in expression	ds1307.h
+error: 11	324	Undeclared identifier 'I2C_repeated_Start' in expression	ds1307.h
+error: 12	324	Undeclared identifier 'I2C_Write' in expression	ds1307.h
+error: 13	324	Undeclared identifier 'I2C_Read' in expression	ds1307.h
+error: 14	324	Undeclared identifier 'I2C_Stop' in expression	ds1307.h
+error: 21	324	Undeclared identifier 'I2C_Start' in expression	ds1307.h
+error: 22	324	Undeclared identifier 'I2C_Write' in expression	ds1307.h
+error: 23	324	Undeclared identifier 'I2C_Write' in expression	ds1307.h
+error: 24	324	Undeclared identifier 'I2C_Write' in expression	ds1307.h
+error: 25	324	Undeclared identifier 'I2C_Stop' in expression	ds1307.h
+error: 26	312	Internal error ''	ds1307.h
+error: 0	102	Finished (with errors): 21 May 2017, 19:51:31	simpleRTCclcok.mcppi

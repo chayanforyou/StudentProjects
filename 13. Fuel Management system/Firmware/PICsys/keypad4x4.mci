@@ -1,0 +1,19 @@
+[Project]
+Filename=D:\1. Electronics\Antor's corner\Tanvir Bhai\Projects\12. Fuel Management system\Firmware\PICsys\keypad4x4.inc
+[Environment]
+CaretX=30
+CaretY=96
+[Version]
+Enable=1
+Rollover=255
+Major=0
+Minor=0
+Release=0
+Build=0
+[Results]
+Visible=1
+Height=117
+View=1
+[Status]
+Message=Compilation errors
+Image=3

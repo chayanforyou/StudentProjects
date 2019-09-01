@@ -1,0 +1,19 @@
+[Project]
+Filename=C:\Users\antor\Google Drive\Embedded Projects\Tanvir Bhai\Projects\16. IoT Home report\Firmware\IoThome.bas
+[Environment]
+CaretX=94
+CaretY=6
+[Version]
+Enable=1
+Rollover=255
+Major=0
+Minor=0
+Release=0
+Build=2
+[Results]
+Visible=1
+Height=117
+View=1
+[Status]
+Message=Success : 1663 program words used, 36 variable bytes used
+Image=2

@@ -1,0 +1,15 @@
+main
+	__CC2DW
+		____DoICP
+	check_sensor
+		show_text
+			send_data
+				____DoICP
+			____DoICP
+	scroll_text
+		____DoICP
+		check_sensor
+			show_text
+				send_data
+					____DoICP
+				____DoICP

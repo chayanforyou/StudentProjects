@@ -1,0 +1,17 @@
+main
+	__CC2DW
+		____DoICP
+	UART1_Init
+	I2C1_Init
+	GSM_init
+		UART1_Write_Text
+			UART1_Write
+interrupt
+	UART1_Read
+	RecSMS
+		strlen
+		write_EEPROM
+			I2C1_Start
+				I2C1_Is_Idle
+			I2C1_Wr
+			I2C1_Stop

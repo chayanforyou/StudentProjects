@@ -1,0 +1,19 @@
+[Project]
+Filename=C:\Users\antor\Google Drive\Embedded Projects\Tanvir Bhai\Projects\29. Health Assistant\Health care.bas
+[Environment]
+CaretX=24
+CaretY=88
+[Version]
+Enable=1
+Rollover=255
+Major=0
+Minor=0
+Release=0
+Build=9
+[Results]
+Visible=1
+Height=117
+View=1
+[Status]
+Message=Success : 813 program words used, 24 variable bytes used
+Image=2

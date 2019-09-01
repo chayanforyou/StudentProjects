@@ -1,0 +1,12 @@
+for(scroll = 0; scroll < 760; scroll++){
+       for(ref = 0; ref < 50; ref++){
+         DS = 0; SH = 1; SH = 0; ST = 1; ST = 0;
+         for(col = 0; col < 48; col++){
+           row_data = Character[col + scroll];
+           masking(row_data);
+           delay_us(10);
+           PORTB = 0;
+           DS = 1; SH = 1; SH = 0; ST = 1; ST = 0;
+         }
+       }
+     }

@@ -1,0 +1,10 @@
+       Data &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00,
+       Data &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &HFF , &HFF , &HFF , &HFF , &HFF , &HFF , &H00 , &H00,       ' Code for char
+       Data &H00 , &H00 , &H00 , &H0C , &H60 , &H18 , &HF0 , &H18 , &H70 , &H10 , &H18 , &H18 , &H18 , &H18 , &H18 , &H08,
+       Data &HF8 , &H1F , &HF0 , &H3F , &H00 , &H00 , &H28 , &H06 , &H78 , &H0E , &HF8 , &H08 , &HD8 , &H0C , &H88 , &H0F,
+       Data &H88 , &H07 , &H08 , &H02 , &H08 , &H06 , &HF8 , &H3F , &HF8 , &H3F , &H08 , &H00 , &H08 , &H00 , &H80 , &H01,
+       Data &H80 , &H01 , &H80 , &H01 , &H80 , &H01 , &H80 , &H01 , &H00 , &H00 , &H00 , &H00 , &H08 , &H00 , &HC8 , &H07,
+       Data &HE8 , &H0F , &H3B , &H18 , &H1B , &H38 , &H0A , &H38 , &H0A , &H00 , &HFA , &H1F , &HFA , &H3F , &H0E , &H20,
+       Data &H0E , &H20 , &H08 , &H36 , &H08 , &H3F , &H08 , &H1F , &H08 , &H0E , &H08 , &H00 , &H08 , &H00 , &HC8 , &H03,
+       Data &HE8 , &H07 , &H68 , &H06 , &H68 , &H0C , &H68 , &H08 , &H68 , &H18 , &HF8 , &H1F , &HF8 , &H3F , &H68 , &H00,
+       Data &H68 , &H06 , &HE8 , &H07 , &HC8 , &H03 , &H08 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00 , &H00,       ' Code for char s-tech Bangla16x16 10 line

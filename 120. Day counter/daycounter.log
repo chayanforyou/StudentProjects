@@ -1,0 +1,12 @@
+# Writing all output to: D:\1. Electronics\Antor's corner\Others\Day counter RTC\daycounter.log
+set pad_wire_necking on
+bus diagonal
+fanout 5
+route 50
+clean 5
+route 50 16
+clean 5
+filter 5
+recorner diagonal
+status_file
+

@@ -1,0 +1,43 @@
+﻿Build started 25-Aug-16 12:22:22 AM.
+     1>Project "D:\1. Electronics\Abrar's corner\Tanvir Bhai\Projects\Fingerprint Voting Machine\Sunrom-3935\SDK\PC APP Source\APITest_V1.0\OPTModuleTest.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug\OPTModuleTest.pch" /Fo".\Debug\\" /Fd".\Debug\vc110.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\OPTModuleTest.pch" /Fo".\Debug\\" /Fd".\Debug\vc110.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt BinImg.cpp DlgContent.cpp DownCharLib.cpp OPTModuleTest.cpp OPTModuleTestDlg.cpp PathDialog.cpp infotip\XInfoTip.cpp
+         XInfoTip.cpp
+         PathDialog.cpp
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\apitest_v1.0\pathdialog.h(48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         OPTModuleTestDlg.cpp
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\apitest_v1.0\optmoduletestdlg.cpp(372): error C2668: 'pow' : ambiguous call to overloaded function
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\math.h(582): could be 'long double pow(long double,int)'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\math.h(580): or       'long double pow(long double,long double)'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\math.h(534): or       'float pow(float,int)'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\math.h(532): or       'float pow(float,float)'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\math.h(496): or       'double pow(double,int)'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\math.h(122): or       'double pow(double,double)'
+                 while trying to match the argument list '(int, size_t)'
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\apitest_v1.0\optmoduletestdlg.cpp(1844): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\apitest_v1.0\optmoduletestdlg.cpp(1922): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\apitest_v1.0\optmoduletestdlg.cpp(2133): warning C4244: 'initializing' : conversion from 'ULONGLONG' to 'int', possible loss of data
+         OPTModuleTest.cpp
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\apitest_v1.0\optmoduletest.cpp(52): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\atlmfc\include\afxwin.h(5361) : see declaration of 'CWinApp::Enable3dControls'
+         DownCharLib.cpp
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\apitest_v1.0\pathdialog.h(48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\apitest_v1.0\downcharlib.cpp(75): warning C4244: '=' : conversion from 'ULONGLONG' to 'int', possible loss of data
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\apitest_v1.0\downcharlib.cpp(220): warning C4244: '=' : conversion from 'ULONGLONG' to 'int', possible loss of data
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\apitest_v1.0\downcharlib.cpp(227): warning C4244: 'argument' : conversion from 'ULONGLONG' to 'UINT', possible loss of data
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\apitest_v1.0\downcharlib.cpp(228): warning C4244: '=' : conversion from 'ULONGLONG' to 'int', possible loss of data
+         DlgContent.cpp
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\apitest_v1.0\dlgcontent.cpp(90): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+         BinImg.cpp
+     1>d:\1. electronics\abrar's corner\tanvir bhai\projects\fingerprint voting machine\sunrom-3935\sdk\pc app source\apitest_v1.0\binimg.cpp(69): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
+         Generating Code...
+     1>Done Building Project "D:\1. Electronics\Abrar's corner\Tanvir Bhai\Projects\Fingerprint Voting Machine\Sunrom-3935\SDK\PC APP Source\APITest_V1.0\OPTModuleTest.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.62

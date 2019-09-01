@@ -1,0 +1,24 @@
+
+---------------------------- Hosting
+https://www.000webhost.com
+
+Login:
+    email: mr.cycho@gmail.com
+    Password: mr.cycho2371
+
+
+---------------------------- Domain
+Username: iothomereport
+
+Password: YndnDzOMUcxAvAC%N)c3
+
+Domain: http://eeefinalyear.net16.net/
+                    or,
+       iothomereport.000webhostapp.com
+
+---------------------------- Database
+Name: iot
+
+username: mrcycho
+
+password: mr.cycho2371

@@ -1,0 +1,24 @@
+main
+	batt_volt
+		ADC_Read
+			Delay_22us
+		Div_8X8_U
+		byte2double
+			NRM4032
+				RES032
+				SETFUN32
+				FIXSIGN32
+				SETFOV32
+	Compare_Double
+	charging
+		batt_volt
+			ADC_Read
+				Delay_22us
+			Div_8X8_U
+			byte2double
+				NRM4032
+					RES032
+					SETFUN32
+					FIXSIGN32
+					SETFOV32
+		Compare_Double

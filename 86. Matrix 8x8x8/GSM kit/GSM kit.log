@@ -1,0 +1,12 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F876A -DL -O11111114 -fo20 -N"C:\Users\antor\Google Drive\Embedded Projects\Aminul Sir\7. Matrix 8x8x8\GSM kit\GSM kit.mcppi" -SP"C:\Program Files (x86)\mikroC PRO for PIC\Defs\" -SP"C:\Program Files (x86)\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\antor\Google Drive\Embedded Projects\Aminul Sir\7. Matrix 8x8x8\GSM kit\" "GSM kit.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CString.mcl" "__Lib_I2C_c34.mcl" "__Lib_UART_c67.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	GSM kit.c
+warning: 90	1509	Generated baud rate is 9615 bps (error = 0.16 percent)	GSM kit.c
+diagnostics: 100	123	Compiled Successfully	GSM kit.c
+diagnostics: 0	127	All files Compiled in 32 ms	 
+hint: 0	1144	Used RAM (bytes): 156 (44%)  Free RAM (bytes): 196 (56%)	Used RAM (bytes): 156 (44%)  Free RAM (bytes): 196 (56%)
+hint: 0	1144	Used ROM (program words): 654 (8%)  Free ROM (program words): 7538 (92%)	Used ROM (program words): 654 (8%)  Free ROM (program words): 7538 (92%)
+diagnostics: 0	125	Project Linked Successfully	GSM kit.mcppi
+diagnostics: 0	128	Linked in 47 ms	 
+diagnostics: 0	129	Project 'GSM kit.mcppi' completed: 94 ms	 
+diagnostics: 0	103	Finished successfully: 09 May 2017, 21:03:57	GSM kit.mcppi

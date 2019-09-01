@@ -1,0 +1,6 @@
+
+visit:
+       http://homeautomation.epizy.com
+
+Relay page: 
+       http://homeautomation.epizy.com/relay.php

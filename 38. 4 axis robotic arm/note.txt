@@ -1,0 +1,9 @@
+
+servo 1: Down = 0, up = 65
+         0 - 65 close
+servo 2: down = 70, up = 180
+         70 - 180 up
+servo 3: Down = 5, up 100
+         5 - 100 up
+servo 4: 0 - 180
+

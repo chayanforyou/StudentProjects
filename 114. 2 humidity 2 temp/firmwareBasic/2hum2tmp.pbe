@@ -1,0 +1,4 @@
+16F876A,2881,103,8
+Reminder! Line [2]	In file [C:\Users\antor\Google Drive\Embedded Projects\Others\2 humidity 2 temp\firmwareBasic\2hum2tmp.bas]	*** Ensure that all fuses are placed in the Config list, as devices have differing default settings! ***
+	PROGRAM COMPILED OK. 2881 Words used from a possible 8192
+	103 Variables used in the 16F876A from a possible 368
